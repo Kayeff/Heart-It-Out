@@ -9,7 +9,7 @@ export default function Navbar() {
       <a href="#">
         <img className="h-12" src={logo} alt="heart_it_out_logo" />
       </a>
-      <div className="flex items-center justify-center space-x-4 font-semibold text-health-green">
+      <div className="flex items-center justify-center space-x-4 font-medium text-health-green">
         <NavLinks href={"#"}>Home</NavLinks>
         <NavLinks href={"#"}>Services</NavLinks>
         <NavLinks href={"#"}>Academy</NavLinks>
