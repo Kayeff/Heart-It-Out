@@ -15,7 +15,7 @@ export default function Therapy({ twist, src, focusedText, title, paragraph }) {
           </div>
           <div className="flex items-start justify-center flex-col space-y-8">
             <div className="space-y-2">
-              <h1 className="text-5xl font-semibold tracking-tight">
+              <h1 className="text-4xl font-semibold tracking-tight">
                 <span className="text-logo-yellow">{focusedText}</span> {title}
               </h1>
               <p className="text-anti-flash-white text-lg">{paragraph}</p>
@@ -32,7 +32,7 @@ export default function Therapy({ twist, src, focusedText, title, paragraph }) {
         <>
           <div className="flex items-start justify-center flex-col space-y-8">
             <div className="space-y-2">
-              <h1 className="text-5xl font-semibold tracking-tight">
+              <h1 className="text-4xl font-semibold tracking-tight">
                 <span className="text-logo-yellow">{focusedText}</span> {title}
               </h1>
               <p className="text-anti-flash-white text-lg">{paragraph}</p>

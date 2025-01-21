@@ -8,7 +8,8 @@ export default {
     extend: {
       boxShadow: {
         "navbar": "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
-        "button": "#455A64 5px 5px"
+        "button": "#455A64 5px 5px",
+        "cards": "#455A64 0px 1px 4px,#455A64 0px 0px 0px 3px;"
       },
       colors: {
         "health-green": "#32959D",

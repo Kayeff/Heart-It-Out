@@ -5,7 +5,7 @@ import Button from "./Button";
 
 export default function Navbar() {
   return (
-    <nav className="w-full px-16 p-6 flex items-center justify-between border-b border-slate-500/30 fixed top-0 left-0 bg-white z-50">
+    <nav className="w-full px-16 p-6 flex items-center justify-between border-b border-slate-500/30 sticky top-0 left-0 bg-white z-50">
       <a href="#">
         <img className="h-12" src={logo} alt="heart_it_out_logo" />
       </a>
