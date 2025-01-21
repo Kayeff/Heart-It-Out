@@ -22,7 +22,7 @@ export default function Therapy({ twist, src, focusedText, title, paragraph }) {
             </div>
             <Button
               title={"Start your journey"}
-              css="bg-white text-health-green rounded-full px-4 py-3"
+              css="bg-white text-health-green rounded-full px-4 py-3 hover:bg-anti-flash-white"
               Icon={RiArrowRightUpLine}
               size={30}
             />
@@ -39,7 +39,7 @@ export default function Therapy({ twist, src, focusedText, title, paragraph }) {
             </div>
             <Button
               title={"Start your journey"}
-              css="bg-white text-health-green rounded-full px-4 py-3"
+              css="bg-white text-health-green rounded-full px-4 py-3 hover:bg-anti-flash-white"
               Icon={RiArrowRightUpLine}
               size={30}
             />

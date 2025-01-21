@@ -1,3 +1,6 @@
+import { RiArrowRightUpLine } from "@remixicon/react";
+import Button from "./Button";
+
 export default function Disclamer() {
   return (
     <div className="w-full rounded-2xl flex items-center justify-between text-dark-grey shadow-navbar bg-white p-8">
@@ -13,9 +16,12 @@ export default function Disclamer() {
           . We don’t provide in-patient services currently.
         </p>
       </div>
-      <button className="px-4 py-3 border border-health-green font-medium text-health-green rounded-full hover:bg-health-green transition-colors hover:text-white">
-        More Information
-      </button>
+      <Button
+        title={"More Information"}
+        Icon={RiArrowRightUpLine}
+        css="border border-health-green text-health-green hover:bg-anti-flash-white"
+        size={25}
+      />
     </div>
   );
 }
