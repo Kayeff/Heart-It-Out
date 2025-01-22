@@ -18,10 +18,9 @@ export default {
         "dark-grey": "#455A64",
         "light-yellow": "#FFF9C8",
         "anti-flash-white": "#EDF2F4",
-        "non-photo-blue": "#89D5DD",
         "prussian-blue": "#003750",
-        "mint-green": "#C6DFDC",
         "stars": "#DF7550",
+        "isabelline": "#F4F4F9",
       },
       fontFamily: {
         "Switzer": ["Switzer", "sans-serif"],
