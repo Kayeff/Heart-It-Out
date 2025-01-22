@@ -15,6 +15,7 @@ import Facilities from "./components/Facilities";
 import { therapy_data } from "./therapy";
 import Therapy from "./components/Therapy";
 import invertedWaves from "./assets/inverted-waves.svg";
+import Cards from "./components/Cards";
 
 export default function App() {
   return (
@@ -56,17 +57,21 @@ export default function App() {
           <Facilities Icon={RiSurveyLine} title="Our Programs" />
         </div>
       </WaveSection>
-      <Section classes="w-full py-8 px-40 min-h-screen relative cursor-default space-y-20 bg-health-green text-white">
-        {therapy_data.map((therapy) => (
-          <Therapy
-            key={therapy.id}
-            twist={therapy.twist}
-            src={therapy.src}
-            focusedText={therapy.focusedText}
-            title={therapy.title}
-            paragraph={therapy.para}
-          />
-        ))}
+      <Section classes="w-full py-8 px-40 min-h-screen relative cursor-default space-y-40 bg-health-green text-white">
+        <div className="w-full space-y-20">
+          {therapy_data.map((therapy) => (
+            <Therapy
+              key={therapy.id}
+              twist={therapy.twist}
+              src={therapy.src}
+              focusedText={therapy.focusedText}
+              title={therapy.title}
+              paragraph={therapy.para}
+              buttonText={therapy.buttonText}
+            />
+          ))}
+        </div>
+        <Cards />
       </Section>
       <WaveSection src={invertedWaves} />
     </main>

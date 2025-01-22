@@ -1,11 +1,21 @@
 import Button from "./Button";
 import heroImage from "../assets/hero.jpg";
 import { RiArrowRightUpLine } from "@remixicon/react";
+import googleLogo from "../assets/google-logo.png";
+import practoStars from "../assets/practo-stars.svg";
+import practoLogo from "../assets/practo-logo.png";
+import googleStars from "../assets/google-stars.svg";
+import Review from "./Review";
 
 export default function Hero() {
   return (
     <>
       <div className="flex items-center justify-center flex-col space-y-6">
+        <div className="flex items-start justify-start space-x-2 rounded-full px-1 w-full">
+          <Review title={"5.0"} logo={practoLogo} stars={practoStars} />
+          <div className="h-full w-[1px] bg-dark-grey"></div>
+          <Review title={"4.6"} logo={googleLogo} stars={googleStars} />
+        </div>
         <div className="w-full flex items-start justify-center flex-col space-y-1">
           <h1 className="tracking-tight text-6xl font-bold">
             Face Life's Challenges Bravely with{" "}

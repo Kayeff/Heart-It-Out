@@ -1,7 +1,14 @@
 import { RiArrowRightUpLine } from "@remixicon/react";
 import Button from "./Button";
 
-export default function Therapy({ twist, src, focusedText, title, paragraph }) {
+export default function Therapy({
+  twist,
+  src,
+  focusedText,
+  title,
+  paragraph,
+  buttonText,
+}) {
   return (
     <div className="grid grid-cols-2 gap-20 w-full">
       {twist ? (
@@ -21,7 +28,7 @@ export default function Therapy({ twist, src, focusedText, title, paragraph }) {
               <p className="text-anti-flash-white text-lg">{paragraph}</p>
             </div>
             <Button
-              title={"Start your journey"}
+              title={buttonText}
               css="bg-white text-health-green rounded-full px-4 py-3 hover:bg-anti-flash-white"
               Icon={RiArrowRightUpLine}
               size={30}
@@ -38,7 +45,7 @@ export default function Therapy({ twist, src, focusedText, title, paragraph }) {
               <p className="text-anti-flash-white text-lg">{paragraph}</p>
             </div>
             <Button
-              title={"Start your journey"}
+              title={buttonText}
               css="bg-white text-health-green rounded-full px-4 py-3 hover:bg-anti-flash-white"
               Icon={RiArrowRightUpLine}
               size={30}

@@ -11,6 +11,7 @@ export const therapy_data = [
         title: "Individual Therapy",
         src: individual,
         para: "Explore yourself, overcome hardships, and heal your mind with expert care. Heart it out! provides you with premium health care, a welcoming atmosphere and a personal touch without the wait. Your needs and wants come first for us, along with your health.",
+        buttonText: "Start your journey",
     },
     {
         id: 't2',
@@ -19,6 +20,7 @@ export const therapy_data = [
         title: "Couple Therapy",
         src: couple,
         para: "Get expert care to nourish and re-kindle your relationship and start afresh. Couple therapy will help identify problem areas and find practical strategies that will enable you to reconnect with your partner honestly and healthily.",
+        buttonText: "Take the first step",
     },
     {
         id: 't3',
@@ -27,6 +29,7 @@ export const therapy_data = [
         title: "Family Therapy",
         src: family,
         para: "At Heart It Out, we help build the perfect family bond and create a conflict-free environment with expert support. Every family issue, big or small, can be resolved with the right guidance. With our family therapists, you are in safe hands.",
+        buttonText: "Connect with us",
     },
     {
         id: 't4',
@@ -35,5 +38,6 @@ export const therapy_data = [
         title: "Child Therapy",
         src: child,
         para: "Child therapy can help your child concentrate and perform better academically, build confidence and improve their relationship with others, and also address and overcome any “bad” behaviours.",
+        buttonText: "Talk to our Child Expert",
     }
 ]
