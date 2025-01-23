@@ -2,7 +2,7 @@ import Button from "./Button";
 import Card from "./Card";
 import { RiArrowRightUpLine } from "@remixicon/react";
 
-export default function Cards() {
+export default function WhyChooseUs() {
   return (
     <div className="w-full flex items-center justify-center flex-col space-y-10">
       <h1 className="text-5xl tracking-tight font-bold">

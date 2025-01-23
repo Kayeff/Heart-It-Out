@@ -2,6 +2,7 @@ import individual from "./assets/individual-therapy.jpg";
 import couple from "./assets/couple-therapy.webp";
 import family from "./assets/family-therapy.webp";
 import child from "./assets/child-therapy.jpg";
+import corporate from "./assets/corporate-therapy.jpg";
 
 export const therapy_data = [
     {
@@ -39,5 +40,14 @@ export const therapy_data = [
         src: child,
         para: "Child therapy can help your child concentrate and perform better academically, build confidence and improve their relationship with others, and also address and overcome any “bad” behaviours.",
         buttonText: "Talk to our Child Expert",
-    }
+    },
+    {
+        id: 't5',
+        twist: true,
+        focusedText: "Solution-Focused",
+        title: "Corporate Therapy",
+        src: corporate,
+        para: "A workforce thrives on healthy minds and the productive hearts of aspiring people. Our solution-focused experts help reduce burnout, increase productivity levels, reduce employee attrition, and drive higher revenues.",
+        buttonText: "Request a Demo",
+    },
 ]
