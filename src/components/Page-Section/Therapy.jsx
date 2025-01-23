@@ -6,7 +6,7 @@ export default function Therapy({
   src,
   focusedText,
   title,
-  paragraph,
+  para,
   buttonText,
 }) {
   return (
@@ -23,9 +23,10 @@ export default function Therapy({
           <div className="flex items-start justify-center flex-col space-y-8">
             <div className="space-y-2">
               <h1 className="text-4xl font-semibold tracking-tight">
-                <span className="text-logo-yellow">{focusedText}</span> {title}
+                <span className="text-logo-yellow">{focusedText}</span>
+                {title}
               </h1>
-              <p className="text-anti-flash-white text-lg">{paragraph}</p>
+              <p className="text-anti-flash-white text-lg">{para}</p>
             </div>
             <Button
               title={buttonText}
@@ -42,7 +43,7 @@ export default function Therapy({
               <h1 className="text-4xl font-semibold tracking-tight">
                 <span className="text-logo-yellow">{focusedText}</span> {title}
               </h1>
-              <p className="text-anti-flash-white text-lg">{paragraph}</p>
+              <p className="text-anti-flash-white text-lg">{para}</p>
             </div>
             <Button
               title={buttonText}

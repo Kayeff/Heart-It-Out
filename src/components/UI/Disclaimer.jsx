@@ -1,5 +1,5 @@
 import { RiArrowRightUpLine } from "@remixicon/react";
-import Button from "./Button";
+import Button from "./UI/Button";
 
 export default function Disclamer() {
   return (
@@ -18,7 +18,6 @@ export default function Disclamer() {
       </div>
       <Button
         title={"More Information"}
-        Icon={RiArrowRightUpLine}
         css="border border-health-green text-health-green hover:bg-anti-flash-white"
         size={25}
       />

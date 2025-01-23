@@ -1,16 +1,16 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Section from "./components/Section";
-import WaveSection from "./components/WaveSection";
+import Section from "./components/UI/Section";
+import WaveSection from "./components/UI/WaveSection";
 import { therapy_data } from "./therapy";
 import Therapy from "./components/Therapy";
-import WhyChooseUs from "./components/WhyChooseUs";
+import WhyChooseUsSection from "./components/Page-Section/WhyChooseUsSection";
 import wave1 from "./assets/wave-1.svg";
 import wave2 from "./assets/wave-2.svg";
 import wave3 from "./assets/wave-3.svg";
-import Footer from "./components/Footer";
+import Footer from "./components/Page-Section/Footer";
 import FacilitiesGrid from "./components/FacilitiesGrid";
-import Disclamer from "./components/Disclamer";
+import Disclaimer from "./components/Disclaimer";
 import Testimonials from "./components/Testimonials";
 
 export default function App() {
@@ -28,24 +28,16 @@ export default function App() {
         <Hero />
       </Section>
       <WaveSection src={wave1}>
-        <Disclamer />
+        <Disclaimer />
         <FacilitiesGrid />
       </WaveSection>
       <Section classes={therapySection_Class}>
         <div className="w-full space-y-20">
           {therapy_data.map((therapy) => (
-            <Therapy
-              key={therapy.id}
-              twist={therapy.twist}
-              src={therapy.src}
-              focusedText={therapy.focusedText}
-              title={therapy.title}
-              paragraph={therapy.para}
-              buttonText={therapy.buttonText}
-            />
+            <Therapy key={therapy.id} {...therapy} />
           ))}
         </div>
-        <WhyChooseUs />
+        <WhyChooseUsSection />
       </Section>
       <div className="w-full bg-health-green">
         <WaveSection src={wave2} />

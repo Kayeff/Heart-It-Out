@@ -1,7 +1,7 @@
 import { RiAccountCircleFill } from "@remixicon/react";
 import logo from "../assets/logo.svg";
 import NavLinks from "./NavLinks";
-import Button from "./Button";
+import Button from "../UI/Button";
 
 export default function Navbar() {
   return (

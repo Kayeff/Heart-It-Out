@@ -1,5 +1,5 @@
 import { RiArrowRightUpLine } from "@remixicon/react";
-import Button from "./Button";
+import Button from "../UI/Button";
 
 export default function Resources({
   imgSrc,

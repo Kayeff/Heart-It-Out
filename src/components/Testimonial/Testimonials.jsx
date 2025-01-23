@@ -7,7 +7,7 @@ import facebookLogo from "../assets/facebook.webp";
 import sulekhaLogo from "../assets/sulekha.png";
 import justdialLogo from "../assets/justdial.png";
 import Testimonial from "./Testimonial";
-import Review from "./Review";
+import Review from "../Review";
 
 export default function Testimonials() {
   return (
