@@ -1,5 +1,5 @@
 import { RiAccountCircleFill } from "@remixicon/react";
-import logo from "../assets/logo.svg";
+import logo from "../../assets/logo.svg";
 import NavLinks from "./NavLinks";
 import Button from "../UI/Button";
 

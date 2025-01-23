@@ -1,8 +1,8 @@
-import individual from "./assets/individual-therapy.jpg";
-import couple from "./assets/couple-therapy.webp";
-import family from "./assets/family-therapy.webp";
-import child from "./assets/child-therapy.jpg";
-import corporate from "./assets/corporate-therapy.jpg";
+import individual from "../assets/individual-therapy.jpg";
+import couple from "../assets/couple-therapy.webp";
+import family from "../assets/family-therapy.webp";
+import child from "../assets/child-therapy.jpg";
+import corporate from "../assets/corporate-therapy.jpg";
 
 export const therapy_data = [
     {

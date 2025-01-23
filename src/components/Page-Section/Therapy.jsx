@@ -1,5 +1,5 @@
 import { RiArrowRightUpLine } from "@remixicon/react";
-import Button from "./Button";
+import Button from "../UI/Button";
 
 export default function Therapy({
   twist,
@@ -23,8 +23,7 @@ export default function Therapy({
           <div className="flex items-start justify-center flex-col space-y-8">
             <div className="space-y-2">
               <h1 className="text-4xl font-semibold tracking-tight">
-                <span className="text-logo-yellow">{focusedText}</span>
-                {title}
+                <span className="text-logo-yellow">{focusedText}</span> {title}
               </h1>
               <p className="text-anti-flash-white text-lg">{para}</p>
             </div>

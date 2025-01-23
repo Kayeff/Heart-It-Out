@@ -21,6 +21,7 @@ export default {
         "prussian-blue": "#003750",
         "stars": "#DF7550",
         "isabelline": "#F4F4F9",
+        "whitesmoke": "#F5F5F5",
       },
       fontFamily: {
         "Switzer": ["Switzer", "sans-serif"],

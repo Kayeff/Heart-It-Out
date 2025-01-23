@@ -1,5 +1,5 @@
-import Button from "./Button";
-import heroImage from "../assets/hero.jpg";
+import Button from "../UI/Button";
+import heroImage from "../../assets/hero.jpg";
 import { RiArrowRightUpLine } from "@remixicon/react";
 
 export default function Hero() {

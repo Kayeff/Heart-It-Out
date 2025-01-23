@@ -1,9 +1,8 @@
-import { RiArrowRightUpLine } from "@remixicon/react";
-import Button from "./UI/Button";
+import Button from "./Button";
 
 export default function Disclamer() {
   return (
-    <div className="w-full rounded-2xl flex items-center justify-between text-dark-grey shadow-navbar bg-white p-8">
+    <div className="w-[80%] rounded-2xl flex items-center justify-between text-dark-grey shadow-navbar bg-white p-8">
       <div className="w-[80%]">
         <p className="font-medium text-xl tracking-tight">
           <span className="font-semibold text-health-green">Disclamer: </span>

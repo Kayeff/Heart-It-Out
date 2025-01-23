@@ -1,6 +1,6 @@
 import Button from "../UI/Button.jsx";
 import Card from "../UI/Card.jsx";
-import card_data from "../../data/cardData.js";
+import { card_data } from "../../data/cardData";
 
 export default function WhyChooseUs() {
   return (
@@ -15,7 +15,7 @@ export default function WhyChooseUs() {
       </div>
       <Button
         title="Explore our Programs"
-        css="bg-white text-dark-grey text-health-green hover:bg-anti-flash-white"
+        css="bg-white font-medium text-dark-grey hover:text-health-green hover:bg-anti-flash-white"
       ></Button>
     </div>
   );

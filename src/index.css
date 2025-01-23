@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+.hero-section {
+    @apply h-[calc(100vh-94px)] w-full grid grid-cols-2 cursor-default px-16 py-8 relative;
+}
+
+.facilities-section{
+    @apply w-full flex items-center justify-center p-4;
+}
+
+.therapy-section {
+    @apply w-full py-8 px-40 min-h-screen relative cursor-default space-y-40 bg-health-green text-white;
+}
+
+.testimonial-section {
+    @apply w-full px-10 py-8 min-h-screen cursor-default flex items-start justify-between;
+}
+
+.mobileapp-section {
+    @apply w-full px-10 py-8 min-h-screen cursor-default flex items-start justify-center bg-health-green border-black border;
+}
+
 @font-face {
     font-family: "Switzer";
     src: url("./fonts/Switzer.woff2");

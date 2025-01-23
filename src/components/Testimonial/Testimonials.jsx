@@ -1,21 +1,21 @@
-import { testimonial_data } from "../testimonial";
-import googleLogo from "../assets/google-logo.png";
-import fullStars from "../assets/full-stars.svg";
-import practoLogo from "../assets/practo-logo.png";
-import fourandhalfStars from "../assets/four-half-stars.svg";
-import facebookLogo from "../assets/facebook.webp";
-import sulekhaLogo from "../assets/sulekha.png";
-import justdialLogo from "../assets/justdial.png";
+import { testimonial_data } from "../../data/testimonial";
+import googleLogo from "../../assets/google-logo.png";
+import fullStars from "../../assets/full-stars.svg";
+import practoLogo from "../../assets/practo-logo.png";
+import fourandhalfStars from "../../assets/four-half-stars.svg";
+import facebookLogo from "../../assets/facebook.webp";
+import sulekhaLogo from "../../assets/sulekha.png";
+import justdialLogo from "../../assets/justdial.png";
 import Testimonial from "./Testimonial";
-import Review from "../Review";
+import Review from "../UI/Review";
 
 export default function Testimonials() {
   return (
-    <div className="flex items-center justify-center flex-col space-y-20 p-20 rounded-3xl">
+    <div className="flex items-center justify-center flex-col space-y-20 rounded-3xl">
       <div className="w-full flex items-center justify-center flex-col space-y-4">
         <div className="w-full flex items-center justify-center flex-col">
           <h1 className="font-bold text-6xl tracking-tight">
-            Dont take our word for it,
+            Don't take our word for it,
           </h1>
           <h1 className="font-bold text-6xl tracking-tight">
             See What <span className="text-health-green">Clients</span> Say
