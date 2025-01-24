@@ -11,6 +11,7 @@ import WhyChooseUsSection from "./components/Page-Section/WhyChooseUsSection";
 import Testimonials from "./components/Testimonial/Testimonials";
 import { therapy_data } from "./data/therapy";
 import FacilitiesGrid from "./components/Facilities/FacilitiesGrid";
+import MobileAppSection from "./components/Page-Section/MobileAppSection";
 
 export default function App() {
   return (
@@ -24,7 +25,7 @@ export default function App() {
       </Section>
       <WaveSection src={wave1} />
       <Section classes="therapy-section">
-        <div className="w-full space-y-20">
+        <div className="w-[80%] space-y-20">
           {therapy_data.map((therapy) => (
             <Therapy key={therapy.id} {...therapy} />
           ))}
@@ -38,11 +39,12 @@ export default function App() {
         <Testimonials />
       </Section>
       <WaveSection src={wave3} />
-      {/* <Section classes={classes.mobileapp_class}></Section>
+      <Section classes="mobileapp-section">
+        <MobileAppSection />
+      </Section>
       <div className="w-full bg-health-green">
         <WaveSection src={wave4} />
       </div>
-      <Footer /> */}
     </main>
   );
 }

@@ -12,7 +12,7 @@ const facilitiesData = [
   { Icon: RiEmpathizeFill, title: "Quality Health Care" },
   { Icon: RiCalendar2Fill, title: "Book anytime" },
   { Icon: RiNurseFill, title: "50+ Care Experts" },
-  { Icon: RiSurveyFill, title: "Our Programs" },
+  { Icon: RiSurveyFill, title: "Wide range of Programs" },
   {
     Icon: RiAwardFill,
     title: "Awarded best startup in Healthcare 2021",

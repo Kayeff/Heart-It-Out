@@ -1,11 +1,11 @@
 import { testimonial_data } from "../../data/testimonial";
-import googleLogo from "../../assets/google-logo.png";
+import googleLogo from "../../assets/google-logo.webp";
 import fullStars from "../../assets/full-stars.svg";
-import practoLogo from "../../assets/practo-logo.png";
+import practoLogo from "../../assets/practo-logo.webp";
 import fourandhalfStars from "../../assets/four-half-stars.svg";
 import facebookLogo from "../../assets/facebook.webp";
-import sulekhaLogo from "../../assets/sulekha.png";
-import justdialLogo from "../../assets/justdial.png";
+import sulekhaLogo from "../../assets/sulekha.webp";
+import justdialLogo from "../../assets/justdial.webp";
 import Testimonial from "./Testimonial";
 import Review from "../UI/Review";
 
@@ -18,8 +18,8 @@ export default function Testimonials() {
             Don't take our word for it,
           </h1>
           <h1 className="font-bold text-6xl tracking-tight">
-            See What <span className="text-health-green">Clients</span> Say
-            About Us
+            See what <span className="text-health-green">Clients</span> say
+            about us
           </h1>
         </div>
         <h1 className="text-lg tracking-tight">

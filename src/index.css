@@ -11,7 +11,7 @@
 }
 
 .therapy-section {
-    @apply w-full py-8 px-40 min-h-screen relative cursor-default space-y-40 bg-health-green text-white;
+    @apply w-full py-8 min-h-screen relative cursor-default space-y-40 bg-health-green text-white flex items-center justify-center flex-col;
 }
 
 .testimonial-section {
@@ -19,7 +19,7 @@
 }
 
 .mobileapp-section {
-    @apply w-full px-10 py-8 min-h-screen cursor-default flex items-start justify-center bg-health-green border-black border;
+    @apply w-full py-8 min-h-screen cursor-default flex items-start justify-center bg-health-green;
 }
 
 @font-face {

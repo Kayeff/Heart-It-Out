@@ -1,6 +1,6 @@
-import ikiquideCards from "./assets/ikiquide-cards.png";
-import event from "./assets/event.png";
-import blog from "./assets/blog.png";
+import ikiquideCards from "./assets/ikiquide-cards.webp";
+import event from "./assets/event.webp";
+import blog from "./assets/blog.webp";
 
 export const resource = [
     {
