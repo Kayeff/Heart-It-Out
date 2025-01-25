@@ -22,6 +22,18 @@
     @apply w-full py-8 min-h-screen cursor-default flex items-start justify-center bg-health-green;
 }
 
+.resources-section {
+    @apply w-full cursor-default flex items-start justify-center bg-white;
+}
+
+.small-image{
+    @apply h-40 w-40;
+}
+
+.img{
+    @apply h-1/2 w-full;
+}
+
 @font-face {
     font-family: "Switzer";
     src: url("./fonts/Switzer.woff2");
