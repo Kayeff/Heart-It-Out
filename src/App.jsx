@@ -20,6 +20,8 @@ import periodictable from "./assets/periodicTable.webp";
 import pocketbook from "./assets/pocketnotebooks.webp";
 import event from "./assets/event.webp";
 import blog from "./assets/blog.svg";
+import Button from "./components/UI/Button";
+import Footer from "./components/Page-Section/Footer";
 
 export default function App() {
   return (
@@ -91,6 +93,22 @@ export default function App() {
       <div className="w-full">
         <WaveSection src={wave3} />
       </div>
+      <Section classes="contact-section">
+        <div className="flex items-center justify-center flex-col space-y-2">
+          <h1 className="text-6xl tracking-tight font-bold text-white">
+            Interested in{" "}
+            <span className="text-logo-yellow">our services?</span>
+          </h1>
+          <h1 className="text-6xl tracking-tight font-bold text-white">
+            Contact us.
+          </h1>
+        </div>
+        <Button
+          title="Contact"
+          css="bg-white text-dark-grey px-10 py-3 hover:bg-anti-flash-white hover:text-health-green font-medium"
+        />
+      </Section>
+      <Footer />
     </main>
   );
 }

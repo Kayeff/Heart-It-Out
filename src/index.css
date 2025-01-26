@@ -26,6 +26,10 @@
     @apply w-full cursor-default flex items-start justify-center bg-white;
 }
 
+.contact-section{
+    @apply w-full flex items-center justify-center flex-col p-20 bg-health-green space-y-10;
+}
+
 .small-image{
     @apply h-40 w-40;
 }
