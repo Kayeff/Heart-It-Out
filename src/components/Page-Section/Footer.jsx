@@ -3,14 +3,18 @@ import {
   RiFacebookBoxFill,
   RiInstagramFill,
   RiLinkedinFill,
+  RiMailFill,
+  RiMapPinFill,
+  RiPhoneFill,
   RiTwitterFill,
   RiWhatsappFill,
 } from "@remixicon/react";
 import logo from "../../assets/logo.svg";
 
-function Contact({ children }) {
+function Contact({ Icon, children }) {
   return (
-    <div className="flex items-start justify-start space-x-2 w-max  hover:text-logo-yellow transition-colors">
+    <div className="flex items-start justify-start space-x-2 w-max hover:text-logo-yellow transition-colors">
+      <Icon />
       {children}
     </div>
   );
@@ -30,8 +34,8 @@ function Icons({ Icon, href }) {
 function Links({ title, children }) {
   return (
     <div className="flex items-center justify-start flex-col">
-      <div className="space-y-4 ">
-        <h1 className="uppercase font-medium">{title}</h1>
+      <div className="space-y-4">
+        <h1 className="uppercase font-medium tracking-wide text-sm">{title}</h1>
         <div className="space-y-2 flex items-start justify-start flex-col font-medium tracking-wide">
           {children}
         </div>
@@ -49,19 +53,19 @@ export default function Footer() {
             <div className="flex items-center justify-start space-x-4">
               <img className="h-14" src={logo} alt="" />
             </div>
-            <Contact>
+            <Contact Icon={RiMapPinFill}>
               <a href="#" className="flex items-start justify-center flex-col">
                 <h1 className="font-medium">#42, 7th 'B' Cross</h1>
                 <h1 className="font-medium">Koramangala 4th Block</h1>
                 <h1 className="font-medium">Bangalore - 560034</h1>
               </a>
             </Contact>
-            <Contact>
+            <Contact Icon={RiMailFill}>
               <a href="#" className="flex items-start justify-center flex-col">
                 <h1 className="font-medium">hello@heartitout.in</h1>
               </a>
             </Contact>
-            <Contact>
+            <Contact Icon={RiPhoneFill}>
               <a href="#" className="flex items-start justify-center flex-col">
                 <h1 className="font-medium">+91 789 255 1372</h1>
               </a>
@@ -87,6 +91,9 @@ export default function Footer() {
               </a>
               <a href="#" className="text-sm hover:text-logo-yellow">
                 Child Therapy
+              </a>
+              <a href="#" className="text-sm hover:text-logo-yellow">
+                Corporate Therapy
               </a>
               <a href="#" className="text-sm hover:text-logo-yellow">
                 Psychiatry Supervision
@@ -120,9 +127,6 @@ export default function Footer() {
             </Links>
             <Links title="quick links">
               <a className="text-sm hover:text-logo-yellow" href="">
-                Contact Us
-              </a>
-              <a className="text-sm hover:text-logo-yellow" href="">
                 Blogs
               </a>
               <a className="text-sm hover:text-logo-yellow" href="">
@@ -139,7 +143,7 @@ export default function Footer() {
         </div>
         <div className="w-full">
           <button className="w-full bg-white/10 py-4 flex items-center justify-center space-x-2 rounded-2xl hover:bg-white/20 transition-colors">
-            <span className="text-lg font-medium">
+            <span className="font-medium">
               We are looking reinforcements for our team. Join us.
             </span>
             <span>
@@ -150,7 +154,7 @@ export default function Footer() {
         <div className="w-full h-[1px] bg-white/20"></div>
         <div className="w-full flex items-center justify-between">
           <h1 className="font-medium">
-            ©2024 Heart It Out Pvt. Ltd. All rights reserved.
+            ©2025 Heart It Out Pvt. Ltd. All rights reserved.
           </h1>
           <div className="flex items-center justify-center space-x-4">
             <a href="#" className="font-medium hover:text-logo-yellow">
