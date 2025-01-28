@@ -11,7 +11,7 @@ export default function NavLinks({ href, title, submenu = [] }) {
       className="relative p-1"
     >
       <a
-        className="tracking-tight hover:text-dark-grey transition-colors flex items-center justify-center "
+        className="tracking-tight hover:text-dark-grey transition-colors flex items-center justify-center"
         href={href}
         aria-haspopup={submenu.length > 0}
       >
