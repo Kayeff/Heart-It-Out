@@ -14,17 +14,14 @@ export default function Testimonials() {
     <div className="flex items-center justify-center flex-col space-y-20 rounded-3xl">
       <div className="w-full flex items-center justify-center flex-col space-y-4">
         <div className="w-full flex items-center justify-center flex-col">
-          <h1 className="font-bold text-6xl tracking-tight">
+          <h1 className="font-bold text-5xl tracking-tight">
             Don't take our word for it,
           </h1>
-          <h1 className="font-bold text-6xl tracking-tight">
+          <h1 className="font-bold text-5xl tracking-tight">
             See what <span className="text-health-green">Clients</span> say
             about us
           </h1>
         </div>
-        <h1 className="text-lg tracking-tight">
-          Life-changing turnarounds with the right care
-        </h1>
       </div>
       <div className="w-[70%] grid grid-cols-2 gap-8">
         {testimonial_data.map((person) => (

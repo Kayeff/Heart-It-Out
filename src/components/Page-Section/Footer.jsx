@@ -127,6 +127,9 @@ export default function Footer() {
             </Links>
             <Links title="quick links">
               <a className="text-sm hover:text-logo-yellow" href="">
+                Contact Us
+              </a>
+              <a className="text-sm hover:text-logo-yellow" href="">
                 Blogs
               </a>
               <a className="text-sm hover:text-logo-yellow" href="">

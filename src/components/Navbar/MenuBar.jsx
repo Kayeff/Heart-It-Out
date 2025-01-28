@@ -1,27 +1,27 @@
 export default function MenuBar({ submenu, handleLeave }) {
   return (
-    <div
+    <a
       onMouseLeave={handleLeave}
-      className="absolute -translate-x-1/2 w-96 bg-white rounded-xl mt-1 shadow-md p-4 border border-health-green/20"
+      className="absolute -translate-x-1/2 w-96 bg-anti-flash-white rounded-xl mt-1.5 shadow-md p-4 tooltip-triangle "
     >
       {submenu.map((menu, index) => (
         <div
-          className="w-full hover:bg-health-green/10 flex items-center justify-start rounded-md transition-all space-x-1 group px-2"
+          className="w-full hover:bg-health-green/10 flex items-center justify-start rounded-md transition-all space-x-4 group p-2 cursor-pointer"
           key={index}
         >
           <img
             src={menu.src}
-            className="h-8 group-hover:scale-110 transition-all duration-500"
+            className="h-8 group-hover:scale-110 transition-all duration-300"
             alt=""
           />
-          <a
+          <h1
             href={menu.href || "#"}
-            className="w-full text-dark-grey hover:text-health-green transition-colors px-4 py-3 font-medium"
+            className="text-dark-grey transition-colors font-medium group-hover:text-health-green"
           >
             {menu.title}
-          </a>
+          </h1>
         </div>
       ))}
-    </div>
+    </a>
   );
 }

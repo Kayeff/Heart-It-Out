@@ -15,7 +15,7 @@ const facilitiesData = [
   { Icon: RiSurveyFill, title: "Wide range of Programs" },
   {
     Icon: RiAwardFill,
-    title: "Awarded best startup in Healthcare 2021",
+    title: "Awarded best startup in Health Care 2021",
   },
   {
     Icon: RiShoppingBag4Fill,

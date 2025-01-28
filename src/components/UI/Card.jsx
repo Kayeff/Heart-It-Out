@@ -5,7 +5,7 @@ export default function Card({ span, title, para }) {
         span && "col-span-2"
       }`}
     >
-      <h1 className="text-4xl font-semibold tracking-tight text-prussian-blue">
+      <h1 className="text-3xl font-bold tracking-tight text-prussian-blue">
         {title}
       </h1>
       <p className="text-lg">{para}</p>

@@ -31,24 +31,23 @@ export default function MobileAppSection() {
       <div className="h-full p-4 flex items-center justify-center">
         <img className="h-[70%]" src={mobile} alt="" />
       </div>
-      <div className="h-screen p-4 flex items-center justify-center flex-col space-y-8">
-        <div className="space-y-1">
+      <div className="h-screen p-4 flex items-center justify-center flex-col">
+        <div className="w-full flex items-start justify-center flex-col space-y-8">
           <h1 className="font-bold tracking-tight text-5xl text-whitesmoke">
             <span className="text-logo-yellow"> Heart It Out</span> - mobile app
           </h1>
-          <p className="font-medium text-white">
-            A New Way To Envision Your Mental Health & Wellbeing
-          </p>
+          <div className="w-full space-y-4 flex items-start justify-center flex-col px-3">
+            {app_adv.map((item) => (
+              <Advantage key={item.id} title={item.title} />
+            ))}
+          </div>
+          <div className="w-full flex items-center justify-center">
+            <Button
+              title="Log in now"
+              css="px-10 py-3 hover:bg-anti-flash-white hover:text-health-green"
+            />
+          </div>
         </div>
-        <div className="w-[80%] space-y-4 flex items-start justify-center flex-col">
-          {app_adv.map((item) => (
-            <Advantage key={item.id} title={item.title} />
-          ))}
-        </div>
-        <Button
-          title="Log in now"
-          css="px-8 py-3 hover:bg-anti-flash-white hover:text-health-green"
-        />
       </div>
     </div>
   );

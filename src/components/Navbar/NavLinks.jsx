@@ -1,29 +1,43 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import MenuBar from "./MenuBar";
+import { RiArrowDropDownFill } from "@remixicon/react";
 
-export default function NavLinks({ href, title, submenu = [] }) {
+export default function NavLinks({ title, submenu = [] }) {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
+  const navRef = useRef(null);
+  const handleClick = () => setIsMenuVisible((prev) => !prev);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setIsMenuVisible(false);
+      }
+    };
+
+    if (isMenuVisible) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isMenuVisible]);
 
   return (
-    <div
-      onMouseLeave={() => setIsMenuVisible(false)}
-      onMouseMove={() => setIsMenuVisible(true)}
-      className="relative p-1"
-    >
-      <a
-        className="tracking-tight hover:text-dark-grey transition-colors flex items-center justify-center"
-        href={href}
-        aria-haspopup={submenu.length > 0}
+    <div className="relative w-max" ref={navRef}>
+      <button
+        className="hover:text-dark-grey transition-colors flex items-center justify-center"
+        onClick={handleClick}
       >
         {title}
-      </a>
+        {submenu.length > 0 && (
+          <span className="-mx-1">
+            <RiArrowDropDownFill />
+          </span>
+        )}
+      </button>
       {submenu.length > 0 &&
-        (isMenuVisible ? (
-          <MenuBar
-            submenu={submenu}
-            handleLeave={() => setIsMenuVisible(false)}
-          />
-        ) : null)}
+        (isMenuVisible ? <MenuBar submenu={submenu} /> : null)}
     </div>
   );
 }

@@ -25,6 +25,7 @@ export default function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [scrollDirection]);
+
   return (
     <nav
       className={`w-full px-16 py-4 flex items-center justify-between sticky ${
@@ -34,7 +35,7 @@ export default function Navbar() {
       <a href="#">
         <img className="h-12" src={logo} alt="heart_it_out_logo" />
       </a>
-      <div className="flex items-center justify-center font-medium space-x-2">
+      <div className="flex items-center justify-center font-medium space-x-3">
         {menuItems.map((menu, index) => (
           <div key={index} className="relative">
             <NavLinks

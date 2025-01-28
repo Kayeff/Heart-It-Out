@@ -20,11 +20,11 @@ import FacilitiesGrid from "./components/Facilities/FacilitiesGrid";
 import MobileAppSection from "./components/Page-Section/MobileAppSection";
 import Footer from "./components/Page-Section/Footer";
 import ResourcesSection from "./components/Page-Section/ResourcesSection";
-import ContactSection from "./components/Page-Section/ContactSection";
+import Newsletter from "./components/Page-Section/Newsletter";
 
 export default function App() {
   return (
-    <main className="w-full min-h-screen font-Switzer relative bg-white">
+    <main className="w-full min-h-screen font-Switzer relative bg-white antialiased">
       <Navbar />
       <Section classes="hero-section" isWaves={false}>
         <Hero />
@@ -61,7 +61,7 @@ export default function App() {
         <WaveSection src={wave5} />
       </div>
       <Section classes="contact-section">
-        <ContactSection />
+        <Newsletter />
       </Section>
       <Footer />
     </main>
