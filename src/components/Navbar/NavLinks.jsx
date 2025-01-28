@@ -37,7 +37,7 @@ export default function NavLinks({ title, submenu = [] }) {
         )}
       </button>
       {submenu.length > 0 &&
-        (isMenuVisible ? <MenuBar submenu={submenu} /> : null)}
+        (isMenuVisible ? <MenuBar title={title} submenu={submenu} /> : null)}
     </div>
   );
 }

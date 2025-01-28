@@ -7,6 +7,9 @@ import supervise from "../assets/supervise.svg";
 import psychiatrist from "../assets/psychiatrist.svg";
 import counsel from "../assets/counsel.svg";
 import checkup from "../assets/checkup.svg";
+import store from "../assets/store.svg";
+import events from "../assets/events.svg";
+import blogs from "../assets/blogs.svg";
 
 export const menuItems = [
     { label: "Home", icon: false, submenu: [] },
@@ -24,8 +27,15 @@ export const menuItems = [
         { title: "Diagnostics",src: checkup},
       ],
     },
-    { label: "Academy", submenu: [] },
-    { label: "Store", submenu: [] },
-    { label: "Blog", submenu: [] },
+    { 
+      label: "Academy", 
+    },
+    { label: "Resources", submenu: [
+      {title: "Store", src: store},
+      {title: "Events", src: events},
+      {title: "Blog", src: blogs},
+    ] },
+    { label: "Careers", submenu: [] },
     { label: "Contact", submenu: [] },
+    { label: "About", submenu: [] },
   ];

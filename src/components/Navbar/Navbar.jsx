@@ -35,7 +35,7 @@ export default function Navbar() {
       <a href="#">
         <img className="h-12" src={logo} alt="heart_it_out_logo" />
       </a>
-      <div className="flex items-center justify-center font-medium space-x-3">
+      <div className="flex items-center justify-center font-medium space-x-4">
         {menuItems.map((menu, index) => (
           <div key={index} className="relative">
             <NavLinks
