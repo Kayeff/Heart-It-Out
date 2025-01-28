@@ -3,31 +3,31 @@
 @tailwind utilities;
 
 .hero-section {
-    @apply h-[calc(100vh-94px)] w-full grid grid-cols-2 cursor-default px-16 py-8 relative;
+    @apply h-[calc(100vh-94px)] grid grid-cols-2 px-16 py-8 relative;
 }
 
 .facilities-section{
-    @apply w-full flex items-center justify-center p-4;
+    @apply flex items-center justify-center;
 }
 
 .therapy-section {
-    @apply w-full py-8 min-h-screen relative cursor-default space-y-40 bg-health-green text-white flex items-center justify-center flex-col;
+    @apply py-8 min-h-screen relative space-y-40 bg-health-green text-white flex items-center justify-center flex-col;
 }
 
 .testimonial-section {
-    @apply w-full px-10 py-8 min-h-screen cursor-default flex items-start justify-between;
+    @apply px-10 py-8 min-h-screen flex items-start justify-between;
 }
 
 .mobileapp-section {
-    @apply w-full py-8 min-h-screen cursor-default flex items-start justify-center bg-health-green;
+    @apply py-8 min-h-screen flex items-start justify-center bg-health-green;
 }
 
 .resources-section {
-    @apply w-full cursor-default flex items-start justify-center bg-white;
+    @apply flex items-start justify-center bg-white;
 }
 
 .contact-section{
-    @apply w-full flex items-center justify-center flex-col p-20 bg-health-green space-y-10;
+    @apply flex items-center justify-center flex-col p-20 bg-cerulean space-y-10;
 }
 
 .small-image{

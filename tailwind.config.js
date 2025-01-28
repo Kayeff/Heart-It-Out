@@ -14,14 +14,12 @@ export default {
       colors: {
         "health-green": "#32959D",
         "logo-yellow": "#F9E74D",
-        "dark-skin": "#FBEEE7",
         "dark-grey": "#455A64",
-        "light-yellow": "#FFF9C8",
         "anti-flash-white": "#EDF2F4",
         "prussian-blue": "#003750",
         "stars": "#DF7550",
-        "isabelline": "#F4F4F9",
         "whitesmoke": "#F5F5F5",
+        "cerulean": "#006B86",
       },
       fontFamily: {
         "Switzer": ["Switzer", "sans-serif"],

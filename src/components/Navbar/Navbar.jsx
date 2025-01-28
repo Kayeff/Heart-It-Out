@@ -49,9 +49,7 @@ export default function Navbar() {
       <div>
         <Button
           Icon={RiAccountCircleFill}
-          css={
-            "bg-health-green text-white space-x-2 px-4 py-3 hover:shadow-button"
-          }
+          css="bg-health-green text-white space-x-2 px-4 py-3 hover:shadow-button"
           title={"Log in"}
           size={20}
         />

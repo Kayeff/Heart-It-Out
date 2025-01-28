@@ -15,7 +15,7 @@ export default function WhyChooseUs() {
       </div>
       <Button
         title="Explore our Programs"
-        css="bg-white font-medium text-dark-grey hover:text-health-green hover:bg-anti-flash-white"
+        css="hover:text-health-green hover:bg-anti-flash-white px-8 py-4"
       ></Button>
     </div>
   );

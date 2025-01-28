@@ -47,7 +47,7 @@ export default function MobileAppSection() {
         </div>
         <Button
           title="Log in now"
-          css="bg-white text-dark-grey px-10 py-3 hover:bg-anti-flash-white hover:text-health-green font-medium"
+          css="px-8 py-3 hover:bg-anti-flash-white hover:text-health-green"
         />
       </div>
     </div>

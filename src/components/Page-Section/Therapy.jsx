@@ -29,7 +29,7 @@ export default function Therapy({
             </div>
             <Button
               title={buttonText}
-              css="bg-white text-health-green rounded-full px-4 py-3 hover:bg-anti-flash-white"
+              css="hover:text-health-green px-4 py-3 hover:bg-anti-flash-white"
               Icon={RiArrowRightUpLine}
               size={30}
             />
@@ -46,7 +46,7 @@ export default function Therapy({
             </div>
             <Button
               title={buttonText}
-              css="bg-white text-health-green rounded-full px-4 py-3 hover:bg-anti-flash-white"
+              css="hover:text-health-green px-4 py-3 hover:bg-anti-flash-white"
               Icon={RiArrowRightUpLine}
               size={30}
             />

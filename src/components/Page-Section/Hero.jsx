@@ -18,12 +18,12 @@ export default function Hero() {
         </div>
         <div className="w-full flex items-center justify-start space-x-2">
           <Button
-            css={"bg-health-green text-white"}
+            css="bg-health-green text-white"
             title={"Book your first session"}
             Icon={RiArrowRightUpLine}
           />
           <Button
-            css={"bg-logo-yellow text-dark-grey"}
+            css="bg-logo-yellow text-dark-grey"
             title={"Learn how therapy works"}
             Icon={RiArrowRightUpLine}
           />

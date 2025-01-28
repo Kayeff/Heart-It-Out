@@ -46,7 +46,7 @@ function Links({ title, children }) {
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-health-green text-white flex items-center justify-center cursor-default">
+    <footer className="w-full bg-cerulean text-white flex items-center justify-center cursor-default">
       <div className="w-[80%] py-4 space-y-4">
         <div className="w-full grid grid-cols-2 gap-4 py-4">
           <div className="py-4 space-y-4">
@@ -142,7 +142,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="w-full">
-          <button className="w-full bg-white/10 py-4 flex items-center justify-center space-x-2 rounded-2xl hover:bg-white/20 transition-colors">
+          <button className="w-full bg-white/5 py-4 flex items-center justify-center space-x-2 rounded-2xl hover:bg-white/10 transition-colors">
             <span className="font-medium">
               We are looking reinforcements for our team. Join us.
             </span>
