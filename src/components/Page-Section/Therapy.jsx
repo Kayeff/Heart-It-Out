@@ -10,7 +10,7 @@ export default function Therapy({
   buttonText,
 }) {
   return (
-    <div className="grid grid-cols-2 gap-20 w-full">
+    <div className="grid grid-cols-2 gap-20 w-full p-10">
       {twist ? (
         <>
           <div className="w-full flex items-center justify-start">
@@ -22,14 +22,14 @@ export default function Therapy({
           </div>
           <div className="flex items-start justify-center flex-col space-y-8">
             <div className="space-y-2">
-              <h1 className="text-4xl font-semibold tracking-tight">
-                <span className="text-logo-yellow">{focusedText}</span> {title}
+              <h1 className="text-4xl font-bold tracking-tight text-prussian-blue">
+                <span className="text-health-green">{focusedText}</span> {title}
               </h1>
-              <p className="text-anti-flash-white text-lg">{para}</p>
+              <p className="text-prussian-blue text-lg">{para}</p>
             </div>
             <Button
               title={buttonText}
-              css="hover:text-health-green px-4 py-3 hover:bg-anti-flash-white"
+              css="bg-prussian-blue text-white px-4 py-3 hover:bg-health-green"
               Icon={RiArrowRightUpLine}
               size={30}
             />
@@ -39,14 +39,14 @@ export default function Therapy({
         <>
           <div className="flex items-start justify-center flex-col space-y-8">
             <div className="space-y-2">
-              <h1 className="text-4xl font-semibold tracking-tight">
-                <span className="text-logo-yellow">{focusedText}</span> {title}
+              <h1 className="text-4xl font-bold tracking-tight text-prussian-blue">
+                <span className="text-health-green">{focusedText}</span> {title}
               </h1>
-              <p className="text-anti-flash-white text-lg">{para}</p>
+              <p className="text-prussian-blue text-lg">{para}</p>
             </div>
             <Button
               title={buttonText}
-              css="hover:text-health-green px-4 py-3 hover:bg-anti-flash-white"
+              css="bg-prussian-blue text-white px-4 py-3 hover:bg-health-green"
               Icon={RiArrowRightUpLine}
               size={30}
             />

@@ -3,19 +3,23 @@
 @tailwind utilities;
 
 .hero-section {
-    @apply h-[calc(100vh-94px)] grid grid-cols-2 px-16 py-8 relative;
+    @apply h-screen grid grid-cols-2 px-16 py-8 bg-anti-flash-white;
 }
 
 .facilities-section{
-    @apply flex items-center justify-center;
+    @apply flex items-center justify-center bg-health-green;
 }
 
 .therapy-section {
-    @apply py-8 min-h-screen relative space-y-40 bg-health-green text-white flex items-center justify-center flex-col;
+    @apply py-8 min-h-screen relative space-y-40 bg-anti-flash-white text-health-green flex items-center justify-center flex-col;
+}
+
+.whyus-section{
+    @apply py-8 bg-health-green text-white w-full flex items-center justify-center flex-col;
 }
 
 .testimonial-section {
-    @apply px-10 py-8 min-h-screen flex items-start justify-between;
+    @apply px-10 py-8 min-h-screen flex items-start justify-between bg-anti-flash-white;
 }
 
 .mobileapp-section {
@@ -23,11 +27,11 @@
 }
 
 .resources-section {
-    @apply flex items-start justify-center bg-white;
+    @apply flex items-start justify-center bg-anti-flash-white;
 }
 
-.contact-section{
-    @apply flex items-center justify-center flex-col p-20 bg-cerulean space-y-10;
+.newsletter-section{
+    @apply flex items-center justify-center flex-col p-20 bg-cerulean space-y-10 relative;
 }
 
 .small-image{
@@ -39,7 +43,7 @@
 }
 
 .tooltip-triangle{
-    @apply before:border-b-8 before:border-l-8 before:border-r-8 before:border-l-transparent before:border-r-transparent before:border-b-anti-flash-white before:absolute before:-top-2 before:left-1/2 before:translate-x-5;
+    @apply before:border-b-8 before:border-l-8 before:border-r-8 before:border-l-transparent before:border-r-transparent before:border-b-prussian-blue before:absolute before:-top-2 before:left-1/2 before:-translate-x-3 ;
 }
 
 @font-face {

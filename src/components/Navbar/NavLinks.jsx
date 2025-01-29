@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import MenuBar from "./MenuBar";
 import { RiArrowDropDownFill } from "@remixicon/react";
+import { twMerge } from "tailwind-merge";
 
 export default function NavLinks({ title, submenu = [] }) {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
@@ -26,7 +27,10 @@ export default function NavLinks({ title, submenu = [] }) {
   return (
     <div className="relative w-max" ref={navRef}>
       <button
-        className="hover:text-dark-grey transition-colors flex items-center justify-center"
+        className={`${twMerge(
+          "hover:text-dark-grey transition-colors flex items-center justify-center",
+          isMenuVisible ? "text-dark-grey" : ""
+        )}`}
         onClick={handleClick}
       >
         {title}

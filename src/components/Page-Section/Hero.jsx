@@ -1,5 +1,4 @@
 import Button from "../UI/Button";
-import hero from "../../assets/hero.svg";
 import { RiArrowRightUpLine } from "@remixicon/react";
 
 export default function Hero() {
@@ -11,26 +10,26 @@ export default function Hero() {
             Face Life's Challenges Bravely with{" "}
             <span className="text-health-green">Heart It Out!</span>
           </h1>
-          <p className="text-lg text-dark-grey w-[80%]">
+          <p className="text-lg text-dark-grey w-[80%] font-medium">
             Experience tailored care from our award-winning therapists for all
             your mental health concerns & wellness needs.
           </p>
         </div>
         <div className="w-full flex items-center justify-start space-x-2">
           <Button
-            css="bg-health-green text-white"
+            css="bg-health-green text-white font-semibold"
             title={"Book your first session"}
             Icon={RiArrowRightUpLine}
           />
           <Button
-            css="bg-logo-yellow text-dark-grey"
+            css="bg-logo-yellow text-dark-grey font-semibold"
             title={"Learn how therapy works"}
             Icon={RiArrowRightUpLine}
           />
         </div>
       </div>
-      <div className="w-full h-full rounded-xl flex items-center justify-center p-4">
-        <img src={hero} alt="" />
+      <div className="w-full flex items-center justify-center p-4">
+        <div className="w-full h-[50vh] bg-hero bg-no-repeat bg-center bg-cover shadow-hero relative rounded-2xl"></div>
       </div>
     </>
   );

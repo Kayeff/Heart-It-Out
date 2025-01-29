@@ -46,7 +46,7 @@ function Links({ title, children }) {
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-cerulean text-white flex items-center justify-center cursor-default">
+    <footer className="w-full bg-cerulean text-white flex items-center justify-center cursor-default pb-4">
       <div className="w-[80%] py-4 space-y-4">
         <div className="w-full grid grid-cols-2 gap-4 py-4">
           <div className="py-4 space-y-4">

@@ -17,7 +17,7 @@ export default function Newsletter() {
         </div>
         <div className="w-[50%] flex items-center justify-center space-x-2">
           <input
-            type="text"
+            type="email"
             placeholder="Your Email"
             className="px-4 py-3 bg-transparent border border-white/30 outline-none w-[70%] rounded-xl text-white placeholder:text-white/40"
           />

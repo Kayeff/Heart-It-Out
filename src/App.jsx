@@ -1,9 +1,10 @@
 //Waves
-import wave1 from "./assets/wave-1.svg";
-import wave2 from "./assets/wave-2.svg";
 import wave3 from "./assets/wave-3.svg";
 import wave4 from "./assets/wave-4.svg";
 import wave5 from "./assets/wave-5.svg";
+import wave6 from "./assets/wave6.svg";
+import blob3 from "./assets/blob-3.svg";
+import blob4 from "./assets/blob-4.svg";
 
 //Data
 import { therapy_data } from "./data/therapy";
@@ -24,30 +25,42 @@ import Newsletter from "./components/Page-Section/Newsletter";
 
 export default function App() {
   return (
-    <main className="w-full min-h-screen font-Switzer relative bg-white antialiased">
+    <main className="w-full min-h-screen font-Switzer relative bg-white antialiased overflow-x-hidden">
       <Navbar />
       <Section classes="hero-section" isWaves={false}>
         <Hero />
       </Section>
+      <div className="w-full bg-anti-flash-white">
+        <WaveSection src={wave6} />
+      </div>
       <Section classes="facilities-section">
         <FacilitiesGrid />
       </Section>
-      <WaveSection src={wave1} />
+      <div className="w-full bg-health-green">
+        <WaveSection src={wave4} />
+      </div>
       <Section classes="therapy-section">
-        <div className="w-[80%] space-y-20">
+        <div className="w-[90%] px-10 space-y-20">
           {therapy_data.map((therapy) => (
             <Therapy key={therapy.id} {...therapy} />
           ))}
         </div>
+      </Section>
+      <div className="w-full bg-anti-flash-white">
+        <WaveSection src={wave3} />
+      </div>
+      <Section classes="whyus-section">
         <WhyChooseUsSection />
       </Section>
       <div className="w-full bg-health-green">
-        <WaveSection src={wave2} />
+        <WaveSection src={wave4} />
       </div>
       <Section classes="testimonial-section">
         <Testimonials />
       </Section>
-      <WaveSection src={wave3} />
+      <div className="w-full bg-anti-flash-white">
+        <WaveSection src={wave3} />
+      </div>
       <Section classes="mobileapp-section">
         <MobileAppSection />
       </Section>
@@ -57,11 +70,13 @@ export default function App() {
       <Section classes="resources-section">
         <ResourcesSection />
       </Section>
-      <div className="w-full">
+      <div className="w-full bg-anti-flash-white">
         <WaveSection src={wave5} />
       </div>
-      <Section classes="contact-section">
+      <Section classes="newsletter-section">
         <Newsletter />
+        <img className="h-96 absolute -left-44 -top-1/2" src={blob4} alt="" />
+        <img className="h-80 absolute -right-32 -top-1/2" src={blob3} alt="" />
       </Section>
       <Footer />
     </main>

@@ -1,6 +1,6 @@
 export default function MenuBar({ submenu, title }) {
   return (
-    <menu className="absolute -translate-x-1/2 w-96 bg-anti-flash-white rounded-xl mt-1.5 shadow-md tooltip-triangle cursor-default">
+    <menu className="absolute left-1/2 -translate-x-1/2 w-96 bg-anti-flash-white border border-prussian-blue rounded-xl mt-1.5 shadow-navbar tooltip-triangle cursor-default">
       <div className="w-full p-2">
         {submenu.map((menu, index) => (
           <a
@@ -22,8 +22,8 @@ export default function MenuBar({ submenu, title }) {
           </a>
         ))}
       </div>
-      <div className="w-full flex items-center justify-center border border-health-green/30 rounded-b-xl p-2">
-        <h1>{title}</h1>
+      <div className="w-full flex items-center justify-center border-t border-prussian-blue rounded-b-xl p-3 bg-prussian-blue text-pretty">
+        <h1 className="text-anti-flash-white tracking-wide">{title}</h1>
       </div>
     </menu>
   );

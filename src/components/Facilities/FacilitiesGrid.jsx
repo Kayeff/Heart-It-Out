@@ -2,8 +2,10 @@ import Facilities from "./Facilities";
 import {
   RiAwardFill,
   RiCalendar2Fill,
+  RiCalendarScheduleFill,
   RiEmpathizeFill,
   RiNurseFill,
+  RiPresentationFill,
   RiShoppingBag4Fill,
   RiSurveyFill,
 } from "@remixicon/react";
@@ -21,14 +23,27 @@ const facilitiesData = [
     Icon: RiShoppingBag4Fill,
     title: "Self Care Store",
   },
+  {
+    Icon: RiCalendarScheduleFill,
+    title: "Events & Workshops",
+  },
+  {
+    Icon: RiPresentationFill,
+    title: "Employee Assistance",
+  },
 ];
 
 export default function FacilitiesGrid() {
   return (
-    <div className="grid grid-cols-3 grid-flow-dense gap-3 w-[80%]">
-      {facilitiesData.map((data, index) => (
-        <Facilities key={index} Icon={data.Icon} title={data.title} />
-      ))}
+    <div className="w-full flex items-center justify-center flex-col space-y-8 py-4">
+      <h1 className="tracking-tight text-5xl font-bold text-white">
+        Our <span className="text-logo-yellow">Facilities</span>
+      </h1>
+      <div className="grid grid-cols-4 grid-flow-dense gap-2 w-[80%] relative z-10">
+        {facilitiesData.map((data, index) => (
+          <Facilities key={index} Icon={data.Icon} title={data.title} />
+        ))}
+      </div>
     </div>
   );
 }

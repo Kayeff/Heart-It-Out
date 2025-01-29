@@ -1,22 +1,26 @@
 import Button from "../UI/Button.jsx";
 import Card from "../UI/Card.jsx";
 import { card_data } from "../../data/cardData";
+import blob1 from "../../assets/blob-1.svg";
+import blob2 from "../../assets/blob-2.svg";
 
 export default function WhyChooseUs() {
   return (
-    <div className="w-[80%] flex items-center justify-center flex-col space-y-10">
+    <div className="w-[80%] flex items-center justify-center flex-col space-y-10 relative">
       <h1 className="text-5xl tracking-tight font-bold">
         Why choose <span className="text-logo-yellow">Heart It Out</span>?
       </h1>
-      <div className="w-full grid grid-cols-3 gap-4 grid-flow-dense">
+      <div className="w-full grid grid-cols-3 gap-3 grid-flow-dense z-10">
         {card_data.map((data) => (
           <Card key={data.id} {...data} />
         ))}
       </div>
       <Button
         title="Explore our Programs"
-        css="hover:text-health-green hover:bg-anti-flash-white px-8 py-4"
+        css="hover:text-health-green hover:bg-anti-flash-white px-8 py-4 font-semibold"
       ></Button>
+      <img className="h-96 absolute top-0 -left-20" src={blob1} alt="" />
+      <img className="h-96 absolute bottom-10 -right-20" src={blob2} alt="" />
     </div>
   );
 }

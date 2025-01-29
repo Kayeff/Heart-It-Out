@@ -4,6 +4,7 @@ import NavLinks from "./NavLinks";
 import Button from "../UI/Button";
 import { menuItems } from "../../data/menuItem";
 import { useEffect, useRef, useState } from "react";
+import { twMerge } from "tailwind-merge";
 
 export default function Navbar() {
   const [scrollDirection, setScrollDirection] = useState("down");
@@ -28,14 +29,15 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`w-full px-16 py-4 flex items-center justify-between sticky ${
+      className={`${twMerge(
+        "w-full px-16 py-4 flex items-center justify-between fixed top-0 left-0 z-50 bg-anti-flash-white text-health-green transition-top duration-500",
         scrollDirection === "up" ? "top-0" : "top-[-100px]"
-      } left-0 z-50 bg-white text-health-green transition-top duration-500`}
+      )}`}
     >
       <a href="#">
         <img className="h-12" src={logo} alt="heart_it_out_logo" />
       </a>
-      <div className="flex items-center justify-center font-medium space-x-4">
+      <div className="flex items-center justify-center font-medium space-x-5">
         {menuItems.map((menu, index) => (
           <div key={index} className="relative">
             <NavLinks
@@ -52,7 +54,7 @@ export default function Navbar() {
           Icon={RiAccountCircleFill}
           css="bg-health-green text-white space-x-2 px-4 py-3 hover:shadow-button"
           title={"Log in"}
-          size={20}
+          size={21}
         />
       </div>
     </nav>

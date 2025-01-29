@@ -37,5 +37,5 @@ export const menuItems = [
     ] },
     { label: "Careers", submenu: [] },
     { label: "Contact", submenu: [] },
-    { label: "About", submenu: [] },
+    { label: "About Us", submenu: [] },
   ];
