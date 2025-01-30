@@ -1,6 +1,36 @@
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
+gsap.registerPlugin(useGSAP);
+
 export default function MenuBar({ submenu, title }) {
+  const menuRef = useRef(null);
+
+  useGSAP(
+    () => {
+      const menuElement = menuRef.current;
+      if (menuElement) {
+        gsap.set(menuElement, { opacity: 0, y: -10 });
+
+        if (submenu.length > 0) {
+          gsap.to(menuElement, {
+            opacity: 1,
+            y: 0,
+            duration: 0.3,
+            ease: "power2.out",
+          });
+        }
+      }
+    },
+    { scope: menuRef }
+  );
+
   return (
-    <menu className="absolute left-1/2 -translate-x-1/2 w-96 bg-anti-flash-white border border-prussian-blue rounded-xl mt-1.5 shadow-navbar tooltip-triangle cursor-default">
+    <menu
+      ref={menuRef}
+      className="absolute left-1/2 -translate-x-1/2 w-96 bg-anti-flash-white rounded-xl mt-1.5 shadow-navbar tooltip-triangle cursor-default"
+    >
       <div className="w-full p-2">
         {submenu.map((menu, index) => (
           <a

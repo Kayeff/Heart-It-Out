@@ -37,7 +37,7 @@ export default function FacilitiesGrid() {
   return (
     <div className="w-full flex items-center justify-center flex-col space-y-8 py-4">
       <h1 className="tracking-tight text-5xl font-bold text-white">
-        Our <span className="text-logo-yellow">Facilities</span>
+        Facilities <span className="text-logo-yellow">we provide</span>
       </h1>
       <div className="grid grid-cols-4 grid-flow-dense gap-2 w-[80%] relative z-10">
         {facilitiesData.map((data, index) => (

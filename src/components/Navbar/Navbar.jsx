@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 export default function Navbar() {
-  const [scrollDirection, setScrollDirection] = useState("down");
+  const [scrollDirection, setScrollDirection] = useState("up");
   const prevScrollPosition = useRef(window.pageYOffset);
 
   useEffect(() => {
@@ -49,14 +49,12 @@ export default function Navbar() {
           </div>
         ))}
       </div>
-      <div>
-        <Button
-          Icon={RiAccountCircleFill}
-          css="bg-health-green text-white space-x-2 px-4 py-3 hover:shadow-button"
-          title={"Log in"}
-          size={21}
-        />
-      </div>
+      <Button
+        Icon={RiAccountCircleFill}
+        css="bg-health-green text-white px-4 py-3 space-x-0.5 hover:shadow-button"
+        title={"Log in"}
+        size={21}
+      />
     </nav>
   );
 }

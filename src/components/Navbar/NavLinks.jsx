@@ -5,8 +5,8 @@ import { twMerge } from "tailwind-merge";
 
 export default function NavLinks({ title, submenu = [] }) {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
-  const navRef = useRef(null);
   const handleClick = () => setIsMenuVisible((prev) => !prev);
+  const navRef = useRef(null);
 
   useEffect(() => {
     const handleClickOutside = (event) => {

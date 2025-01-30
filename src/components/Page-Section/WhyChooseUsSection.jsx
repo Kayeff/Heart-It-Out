@@ -6,9 +6,9 @@ import blob2 from "../../assets/blob-2.svg";
 
 export default function WhyChooseUs() {
   return (
-    <div className="w-[80%] flex items-center justify-center flex-col space-y-10 relative">
+    <div className="w-[80%] flex items-center justify-center flex-col space-y-20 relative">
       <h1 className="text-5xl tracking-tight font-bold">
-        Why choose <span className="text-logo-yellow">Heart It Out</span>?
+        Why choose <span className="text-logo-yellow">Heart It Out?</span>
       </h1>
       <div className="w-full grid grid-cols-3 gap-3 grid-flow-dense z-10">
         {card_data.map((data) => (

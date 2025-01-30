@@ -1,5 +1,6 @@
 import Button from "../UI/Button";
 import { RiArrowRightUpLine } from "@remixicon/react";
+import hero from "../../assets/hero.webp";
 
 export default function Hero() {
   return (
@@ -29,7 +30,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="w-full flex items-center justify-center p-4">
-        <div className="w-full h-[50vh] bg-hero bg-no-repeat bg-center bg-cover shadow-hero relative rounded-2xl"></div>
+        <img className="rounded-2xl" src={hero} alt="" />
       </div>
     </>
   );
