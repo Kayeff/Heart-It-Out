@@ -13,6 +13,7 @@
     "@gsap/react": "^2.1.2",
     "@remixicon/react": "^4.6.0",
     "autoprefixer": "^10.4.20",
+    "lottie-react": "^2.4.1",
     "postcss": "^8.5.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

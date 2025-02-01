@@ -7,10 +7,10 @@ export default {
   theme: {
     extend: {
       boxShadow: {
-        "navbar": "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
+        "navbar": "rgba(50, 149, 157, 0.02) 0px 1px 3px 0px, rgba(50, 149, 157, 0.15) 0px 0px 0px 1px;",
         "button": "#455A64 5px 5px",
+        "black-button": "#003750 5px 5px",
         "cards": "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;",
-        "hero": "#455A64 10px 10px"
       },
       colors: {
         "health-green": "#32959D",

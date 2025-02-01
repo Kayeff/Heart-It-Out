@@ -1,5 +1,4 @@
 import Button from "../UI/Button";
-import { RiArrowRightUpLine } from "@remixicon/react";
 
 export default function Showcase({ title, para, buttonText, children }) {
   return (
@@ -15,8 +14,7 @@ export default function Showcase({ title, para, buttonText, children }) {
         <div className="flex items-center justify-end w-full">
           <Button
             title={buttonText}
-            css="bg-prussian-blue text-white px-4 py-3 hover:bg-health-green"
-            Icon={RiArrowRightUpLine}
+            css="bg-prussian-blue text-white hover:bg-health-green"
           />
         </div>
       </div>

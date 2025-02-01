@@ -12,7 +12,7 @@ import events from "../assets/events.svg";
 import blogs from "../assets/blogs.svg";
 
 export const menuItems = [
-    { label: "Home", icon: false, submenu: [] },
+  { label: "Therapy", },
     {
       label: "Services",
       submenu: [
@@ -27,15 +27,12 @@ export const menuItems = [
         { title: "Diagnostics",src: checkup},
       ],
     },
-    { 
-      label: "Academy", 
-    },
+    { label: "Academy", },
     { label: "Resources", submenu: [
       {title: "Store", src: store},
       {title: "Events", src: events},
       {title: "Blog", src: blogs},
     ] },
-    { label: "Careers", submenu: [] },
+    { label: "About", submenu: [] },
     { label: "Contact", submenu: [] },
-    { label: "About Us", submenu: [] },
   ];

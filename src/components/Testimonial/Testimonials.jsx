@@ -14,10 +14,10 @@ export default function Testimonials() {
     <div className="flex items-center justify-center flex-col space-y-20 rounded-3xl">
       <div className="w-full flex items-center justify-center flex-col space-y-4">
         <div className="w-full flex items-center justify-center flex-col text-prussian-blue">
-          <h1 className="font-bold text-5xl tracking-tight">
+          <h1 className="font-bold text-6xl tracking-tight">
             Don't take our word for it,
           </h1>
-          <h1 className="font-bold text-5xl tracking-tight">
+          <h1 className="font-bold text-6xl tracking-tight">
             See what <span className="text-health-green">Clients</span> say
             about us
           </h1>

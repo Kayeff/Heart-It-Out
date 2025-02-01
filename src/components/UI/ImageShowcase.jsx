@@ -5,6 +5,7 @@ export default function ImageShowcase({ src, css }) {
         className="w-full h-full object-cover rounded-xl object-center"
         src={src}
         alt="store_img"
+        loading="lazy"
       />
     </div>
   );

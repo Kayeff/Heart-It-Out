@@ -10,7 +10,7 @@ import blog from "../../assets/blog.svg";
 export default function ResourcesSection() {
   return (
     <div className="w-[80%] p-4 flex items-center justify-center flex-col space-y-10">
-      <h1 className="text-5xl font-bold tracking-tight">
+      <h1 className="text-6xl font-bold tracking-tight">
         Discover our <span className="text-health-green">Resources</span>
       </h1>
       <div className="w-full grid grid-cols-3 gap-4">

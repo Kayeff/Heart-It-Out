@@ -1,4 +1,3 @@
-import { RiArrowRightUpLine } from "@remixicon/react";
 import Button from "../UI/Button";
 
 export default function Therapy({
@@ -18,19 +17,19 @@ export default function Therapy({
               className="object-cover rounded-3xl"
               src={src}
               alt="Therapy image"
+              loading="lazy"
             />
           </div>
           <div className="flex items-start justify-center flex-col space-y-8">
             <div className="space-y-2">
-              <h1 className="text-4xl font-bold tracking-tight text-prussian-blue">
+              <h1 className="text-5xl font-semibold tracking-tight text-prussian-blue">
                 <span className="text-health-green">{focusedText}</span> {title}
               </h1>
               <p className="text-prussian-blue text-lg">{para}</p>
             </div>
             <Button
               title={buttonText}
-              css="bg-prussian-blue text-white px-4 py-3 hover:bg-health-green"
-              Icon={RiArrowRightUpLine}
+              css="bg-prussian-blue text-white hover:bg-health-green hover:shadow-black-button"
               size={30}
             />
           </div>
@@ -39,15 +38,14 @@ export default function Therapy({
         <>
           <div className="flex items-start justify-center flex-col space-y-8">
             <div className="space-y-2">
-              <h1 className="text-4xl font-bold tracking-tight text-prussian-blue">
+              <h1 className="text-5xl font-semibold tracking-tight text-prussian-blue">
                 <span className="text-health-green">{focusedText}</span> {title}
               </h1>
               <p className="text-prussian-blue text-lg">{para}</p>
             </div>
             <Button
               title={buttonText}
-              css="bg-prussian-blue text-white px-4 py-3 hover:bg-health-green"
-              Icon={RiArrowRightUpLine}
+              css="bg-prussian-blue text-white hover:bg-health-green hover:shadow-black-button"
               size={30}
             />
           </div>
@@ -56,6 +54,7 @@ export default function Therapy({
               className="object-cover rounded-3xl"
               src={src}
               alt="Therapy image"
+              loading="lazy"
             />
           </div>
         </>

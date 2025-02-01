@@ -28,8 +28,8 @@ export default function NavLinks({ title, submenu = [] }) {
     <div className="relative w-max" ref={navRef}>
       <button
         className={`${twMerge(
-          "hover:text-dark-grey transition-colors flex items-center justify-center",
-          isMenuVisible ? "text-dark-grey" : ""
+          "hover:text-dark-grey transition-all duration-300 flex items-center justify-center px-3 py-2 hover:bg-slate-600/5 rounded-full",
+          isMenuVisible ? "text-dark-grey bg-slate-600/5" : ""
         )}`}
         onClick={handleClick}
       >

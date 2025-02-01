@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .hero-section {
-    @apply h-screen grid grid-cols-2 px-16 py-8 bg-anti-flash-white;
+    @apply h-screen flex items-center justify-center flex-col px-16 py-8 bg-anti-flash-white relative;
 }
 
 .facilities-section{

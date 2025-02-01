@@ -1,3 +1,6 @@
+import Lottie from "lottie-react";
+import animationData from "./assets/animation.json";
+
 //Waves
 import wave3 from "./assets/wave-3.svg";
 import wave4 from "./assets/wave-4.svg";
@@ -22,12 +25,21 @@ import MobileAppSection from "./components/Page-Section/MobileAppSection";
 import Footer from "./components/Page-Section/Footer";
 import ResourcesSection from "./components/Page-Section/ResourcesSection";
 import Newsletter from "./components/Page-Section/Newsletter";
+import { useRef } from "react";
 
 export default function App() {
+  const animationRef = useRef(null);
+
   return (
     <main className="w-full min-h-screen font-Switzer relative bg-white antialiased overflow-x-hidden">
       <Navbar />
       <Section classes="hero-section" isWaves={false}>
+        <Lottie
+          lottieRef={animationRef}
+          className="absolute bottom-2 left-2 h-52"
+          animationData={animationData}
+          loop={false}
+        />
         <Hero />
       </Section>
       <div className="w-full bg-anti-flash-white">
@@ -75,8 +87,18 @@ export default function App() {
       </div>
       <Section classes="newsletter-section">
         <Newsletter />
-        <img className="h-96 absolute -left-44 -top-1/2" src={blob4} alt="" />
-        <img className="h-80 absolute -right-32 -top-1/2" src={blob3} alt="" />
+        <img
+          className="h-96 absolute -left-44 -top-1/2"
+          src={blob4}
+          loading="lazy"
+          alt=""
+        />
+        <img
+          className="h-80 absolute -right-32 -top-1/2"
+          src={blob3}
+          loading="lazy"
+          alt=""
+        />
       </Section>
       <Footer />
     </main>
