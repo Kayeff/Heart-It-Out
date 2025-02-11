@@ -38,7 +38,7 @@ export default function Button({ title, css, Icon, size }) {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       className={`${twMerge(
-        "px-6 py-4 rounded-full font-medium flex items-center justify-center transition-all hover:shadow-black-button duration-500 bg-white text-dark-grey relative",
+        "px-6 py-4 rounded-full font-medium flex items-center justify-center transition-all hover:shadow-black-button duration-500 bg-white text-dark-grey relative cursor-pointer",
         css
       )}`}
     >

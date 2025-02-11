@@ -1,13 +1,12 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
-  --shadow-navbar:
-    rgba(50, 149, 157, 0.02) 0px 1px 3px 0px,
+  --shadow-navbar: rgba(50, 149, 157, 0.02) 0px 1px 3px 0px,
     rgba(50, 149, 157, 0.15) 0px 0px 0px 1px;
   --shadow-button: #455a64 5px 5px;
   --shadow-black-button: #003750 5px 5px;
-  --shadow-cards:
-    rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  --shadow-cards: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
   --color-health-green: #32959d;
   --color-logo-yellow: #f9e74d;
@@ -42,50 +41,50 @@
 }
 
 .hero-section {
-    @apply h-screen flex items-center justify-center flex-col px-16 py-8 bg-anti-flash-white relative;
+  @apply flex items-center justify-center flex-col px-16 bg-anti-flash-white relative;
 }
 
-.facilities-section{
-    @apply flex items-center justify-center bg-health-green;
+.facilities-section {
+  @apply flex items-center justify-center bg-health-green;
 }
 
 .therapy-section {
-    @apply py-8 min-h-screen relative space-y-40 bg-anti-flash-white text-health-green flex items-center justify-center flex-col;
+  @apply py-8 min-h-screen relative space-y-40 bg-anti-flash-white text-health-green flex items-center justify-center flex-col;
 }
 
-.whyus-section{
-    @apply py-8 bg-health-green text-white w-full flex items-center justify-center flex-col;
+.whyus-section {
+  @apply py-8 min-h-screen bg-health-green text-white w-full flex items-center justify-center flex-col;
 }
 
 .testimonial-section {
-    @apply px-10 py-8 min-h-screen flex items-start justify-between bg-anti-flash-white;
+  @apply px-10 py-8 min-h-screen flex items-start justify-between bg-anti-flash-white;
 }
 
 .mobileapp-section {
-    @apply py-8 min-h-screen flex items-start justify-center bg-health-green;
+  @apply py-8 min-h-screen flex items-start justify-center bg-health-green;
 }
 
 .resources-section {
-    @apply flex items-start justify-center bg-anti-flash-white;
+  @apply flex items-start justify-center bg-anti-flash-white;
 }
 
-.newsletter-section{
-    @apply flex items-center justify-center flex-col p-20 bg-cerulean space-y-10 relative;
+.newsletter-section {
+  @apply flex items-center justify-center flex-col p-20 bg-cerulean space-y-10 relative;
 }
 
-.small-image{
-    @apply h-40 w-40;
+.small-image {
+  @apply h-40 w-40;
 }
 
-.img{
-    @apply h-1/2 w-full;
+.img {
+  @apply h-1/2 w-full;
 }
 
-.tooltip-triangle{
-    @apply before:border-b-8 before:border-l-8 before:border-r-8 before:border-l-transparent before:border-r-transparent before:border-b-prussian-blue before:absolute before:-top-2 before:left-1/2 before:-translate-x-3 ;
+.tooltip-triangle {
+  @apply before:border-b-8 before:border-l-8 before:border-r-8 before:border-l-transparent before:border-r-transparent before:border-b-prussian-blue before:absolute before:-top-2 before:left-1/2 before:-translate-x-3;
 }
 
 @font-face {
-    font-family: "Switzer";
-    src: url("./fonts/Switzer.woff2");
+  font-family: "Switzer";
+  src: url("./fonts/Switzer.woff2");
 }

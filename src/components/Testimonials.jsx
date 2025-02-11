@@ -1,13 +1,13 @@
-import { testimonial_data } from "../../data/testimonial";
-import googleLogo from "../../assets/google-logo.webp";
-import fullStars from "../../assets/full-stars.svg";
-import practoLogo from "../../assets/practo-logo.webp";
-import fourandhalfStars from "../../assets/four-half-stars.svg";
-import facebookLogo from "../../assets/facebook.webp";
-import sulekhaLogo from "../../assets/sulekha.webp";
-import justdialLogo from "../../assets/justdial.webp";
+import { testimonial_data } from "../data/testimonial";
+import googleLogo from "../assets/google-logo.webp";
+import fullStars from "../assets/full-stars.svg";
+import practoLogo from "../assets/practo-logo.webp";
+import fourandhalfStars from "../assets/four-half-stars.svg";
+import facebookLogo from "../assets/facebook.webp";
+import sulekhaLogo from "../assets/sulekha.webp";
+import justdialLogo from "../assets/justdial.webp";
 import Testimonial from "./Testimonial";
-import Review from "../UI/Review";
+import Review from "./Review";
 
 export default function Testimonials() {
   return (

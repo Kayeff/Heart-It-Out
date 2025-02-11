@@ -9,7 +9,7 @@ import {
   RiTwitterFill,
   RiWhatsappFill,
 } from "@remixicon/react";
-import logo from "../../assets/logo.svg";
+import logo from "../assets/logo.svg";
 
 function Contact({ Icon, children }) {
   return (
@@ -35,7 +35,9 @@ function Links({ title, children }) {
   return (
     <div className="flex items-center justify-start flex-col">
       <div className="space-y-4">
-        <h1 className="uppercase font-medium tracking-wide text-sm">{title}</h1>
+        <h1 className="uppercase font-medium tracking-wide text-sm text-anti-flash-white/80">
+          {title}
+        </h1>
         <div className="space-y-2 flex items-start justify-start flex-col font-medium tracking-wide">
           {children}
         </div>
@@ -145,7 +147,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="w-full">
-          <button className="w-full bg-white/5 py-4 flex items-center justify-center space-x-2 rounded-2xl hover:bg-white/10 transition-colors">
+          <button className="w-full bg-white/5 py-4 flex items-center justify-center space-x-2 rounded-2xl hover:bg-white/10 transition-colors cursor-pointer">
             <span className="font-medium">
               We are looking reinforcements for our team. Join us.
             </span>

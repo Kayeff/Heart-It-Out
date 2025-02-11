@@ -1,8 +1,8 @@
-import Button from "../UI/Button.jsx";
-import Card from "../UI/Card.jsx";
-import { card_data } from "../../data/cardData";
-import blob1 from "../../assets/blob-1.svg";
-import blob2 from "../../assets/blob-2.svg";
+import Button from "./Button.jsx";
+import Card from "./Card.jsx";
+import { card_data } from "../data/cardData.js";
+import blob1 from "../assets/blob-1.svg";
+import blob2 from "../assets/blob-2.svg";
 
 export default function WhyChooseUs() {
   return (

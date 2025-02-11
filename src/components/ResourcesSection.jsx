@@ -1,11 +1,11 @@
 import Showcase from "./Showcase";
-import ImageShowcase from "../UI/ImageShowcase";
-import ikiguide from "../../assets/ikiguide.webp";
-import doodlebook from "../../assets/doodlebook.webp";
-import periodictable from "../../assets/periodicTable.webp";
-import pocketbook from "../../assets/pocketnotebooks.webp";
-import event from "../../assets/event.webp";
-import blog from "../../assets/blog.svg";
+import ImageShowcase from "./ImageShowcase";
+import ikiguide from "../assets/ikiguide.webp";
+import doodlebook from "../assets/doodlebook.webp";
+import periodictable from "../assets/periodicTable.webp";
+import pocketbook from "../assets/pocketnotebooks.webp";
+import event from "../assets/event.webp";
+import blog from "../assets/blog.svg";
 
 export default function ResourcesSection() {
   return (

@@ -26,10 +26,11 @@ export default function NavLinks({ title, submenu = [] }) {
 
   return (
     <div className="relative w-max" ref={navRef}>
-      <button
+      <a
+        href="#"
         className={`${twMerge(
-          "hover:text-dark-grey transition-all duration-300 flex items-center justify-center px-3 py-2 hover:bg-slate-600/5 rounded-full",
-          isMenuVisible ? "text-dark-grey bg-slate-600/5" : ""
+          "transition-all duration-300 flex items-center justify-center px-3 py-2 hover:bg-prussian-blue/20 rounded-full",
+          isMenuVisible ? "text-prussian-blue bg-prussian-blue/20" : ""
         )}`}
         onClick={handleClick}
       >
@@ -39,7 +40,7 @@ export default function NavLinks({ title, submenu = [] }) {
             <RiArrowDropDownFill />
           </span>
         )}
-      </button>
+      </a>
       {submenu.length > 0 &&
         (isMenuVisible ? <MenuBar title={title} submenu={submenu} /> : null)}
     </div>

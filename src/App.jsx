@@ -1,98 +1,36 @@
 import { ReactLenis, useLenis } from "lenis/react";
-
-//Waves
-import wave3 from "./assets/wave-3.svg";
-import wave4 from "./assets/wave-4.svg";
-import wave5 from "./assets/wave-5.svg";
-import wave6 from "./assets/wave6.svg";
-import blob3 from "./assets/blob-3.svg";
-import blob4 from "./assets/blob-4.svg";
-
-//Data
-import { therapy_data } from "./data/therapy";
-
-//Components
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Page-Section/Hero";
-import Section from "./components/UI/Section";
-import WaveSection from "./components/UI/WaveSection";
-import Therapy from "./components/Page-Section/Therapy";
-import WhyChooseUsSection from "./components/Page-Section/WhyChooseUsSection";
-import Testimonials from "./components/Testimonial/Testimonials";
-import FacilitiesGrid from "./components/Facilities/FacilitiesGrid";
-import MobileAppSection from "./components/Page-Section/MobileAppSection";
-import Footer from "./components/Page-Section/Footer";
-import ResourcesSection from "./components/Page-Section/ResourcesSection";
-import Newsletter from "./components/Page-Section/Newsletter";
+import { Suspense } from "react";
+import { Outlet, useLocation } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function App() {
   const lenis = useLenis(null);
+  const location = useLocation();
 
   return (
     <ReactLenis root>
-      <main className="w-full min-h-screen font-Switzer relative bg-white antialiased overflow-x-hidden">
+      <main className="w-full min-h-screen font-Switzer relative bg-anti-flash-white antialiased">
         <Navbar />
-        <Section classes="hero-section" isWaves={false}>
-          <Hero />
-        </Section>
-        <div className="w-full bg-anti-flash-white">
-          <WaveSection src={wave6} />
-        </div>
-        <Section classes="facilities-section">
-          <FacilitiesGrid />
-        </Section>
-        <div className="w-full bg-health-green">
-          <WaveSection src={wave4} />
-        </div>
-        <Section classes="therapy-section">
-          <div className="w-[90%] px-10 space-y-20">
-            {therapy_data.map((therapy) => (
-              <Therapy key={therapy.id} {...therapy} />
-            ))}
-          </div>
-        </Section>
-        <div className="w-full bg-anti-flash-white">
-          <WaveSection src={wave3} />
-        </div>
-        <Section classes="whyus-section">
-          <WhyChooseUsSection />
-        </Section>
-        <div className="w-full bg-health-green">
-          <WaveSection src={wave4} />
-        </div>
-        <Section classes="testimonial-section">
-          <Testimonials />
-        </Section>
-        <div className="w-full bg-anti-flash-white">
-          <WaveSection src={wave3} />
-        </div>
-        <Section classes="mobileapp-section">
-          <MobileAppSection />
-        </Section>
-        <div className="w-full bg-health-green">
-          <WaveSection src={wave4} />
-        </div>
-        <Section classes="resources-section">
-          <ResourcesSection />
-        </Section>
-        <div className="w-full bg-anti-flash-white">
-          <WaveSection src={wave5} />
-        </div>
-        <Section classes="newsletter-section">
-          <Newsletter />
-          <img
-            className="h-96 absolute -left-44 -top-1/2"
-            src={blob4}
-            loading="lazy"
-            alt=""
-          />
-          <img
-            className="h-80 absolute -right-32 -top-1/2"
-            src={blob3}
-            loading="lazy"
-            alt=""
-          />
-        </Section>
+        <AnimatePresence mode="wait">
+          <Suspense
+            fallback={
+              <div className="text-white text-center py-10">Loading...</div>
+            }
+          >
+            <motion.div
+              key={location.pathname}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1, ease: "easeInOut" }}
+              className="w-full"
+            >
+              <Outlet />
+            </motion.div>
+          </Suspense>
+        </AnimatePresence>
         <Footer />
       </main>
     </ReactLenis>

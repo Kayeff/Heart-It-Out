@@ -1,4 +1,4 @@
-import Button from "../UI/Button";
+import Button from "./Button";
 
 export default function Showcase({ title, para, buttonText, children }) {
   return (
