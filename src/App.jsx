@@ -1,5 +1,4 @@
-import Lottie from "lottie-react";
-import animationData from "./assets/animation.json";
+import { ReactLenis, useLenis } from "lenis/react";
 
 //Waves
 import wave3 from "./assets/wave-3.svg";
@@ -25,82 +24,77 @@ import MobileAppSection from "./components/Page-Section/MobileAppSection";
 import Footer from "./components/Page-Section/Footer";
 import ResourcesSection from "./components/Page-Section/ResourcesSection";
 import Newsletter from "./components/Page-Section/Newsletter";
-import { useRef } from "react";
 
 export default function App() {
-  const animationRef = useRef(null);
+  const lenis = useLenis(null);
 
   return (
-    <main className="w-full min-h-screen font-Switzer relative bg-white antialiased overflow-x-hidden">
-      <Navbar />
-      <Section classes="hero-section" isWaves={false}>
-        <Lottie
-          lottieRef={animationRef}
-          className="absolute bottom-2 left-2 h-52"
-          animationData={animationData}
-          loop={false}
-        />
-        <Hero />
-      </Section>
-      <div className="w-full bg-anti-flash-white">
-        <WaveSection src={wave6} />
-      </div>
-      <Section classes="facilities-section">
-        <FacilitiesGrid />
-      </Section>
-      <div className="w-full bg-health-green">
-        <WaveSection src={wave4} />
-      </div>
-      <Section classes="therapy-section">
-        <div className="w-[90%] px-10 space-y-20">
-          {therapy_data.map((therapy) => (
-            <Therapy key={therapy.id} {...therapy} />
-          ))}
+    <ReactLenis root>
+      <main className="w-full min-h-screen font-Switzer relative bg-white antialiased overflow-x-hidden">
+        <Navbar />
+        <Section classes="hero-section" isWaves={false}>
+          <Hero />
+        </Section>
+        <div className="w-full bg-anti-flash-white">
+          <WaveSection src={wave6} />
         </div>
-      </Section>
-      <div className="w-full bg-anti-flash-white">
-        <WaveSection src={wave3} />
-      </div>
-      <Section classes="whyus-section">
-        <WhyChooseUsSection />
-      </Section>
-      <div className="w-full bg-health-green">
-        <WaveSection src={wave4} />
-      </div>
-      <Section classes="testimonial-section">
-        <Testimonials />
-      </Section>
-      <div className="w-full bg-anti-flash-white">
-        <WaveSection src={wave3} />
-      </div>
-      <Section classes="mobileapp-section">
-        <MobileAppSection />
-      </Section>
-      <div className="w-full bg-health-green">
-        <WaveSection src={wave4} />
-      </div>
-      <Section classes="resources-section">
-        <ResourcesSection />
-      </Section>
-      <div className="w-full bg-anti-flash-white">
-        <WaveSection src={wave5} />
-      </div>
-      <Section classes="newsletter-section">
-        <Newsletter />
-        <img
-          className="h-96 absolute -left-44 -top-1/2"
-          src={blob4}
-          loading="lazy"
-          alt=""
-        />
-        <img
-          className="h-80 absolute -right-32 -top-1/2"
-          src={blob3}
-          loading="lazy"
-          alt=""
-        />
-      </Section>
-      <Footer />
-    </main>
+        <Section classes="facilities-section">
+          <FacilitiesGrid />
+        </Section>
+        <div className="w-full bg-health-green">
+          <WaveSection src={wave4} />
+        </div>
+        <Section classes="therapy-section">
+          <div className="w-[90%] px-10 space-y-20">
+            {therapy_data.map((therapy) => (
+              <Therapy key={therapy.id} {...therapy} />
+            ))}
+          </div>
+        </Section>
+        <div className="w-full bg-anti-flash-white">
+          <WaveSection src={wave3} />
+        </div>
+        <Section classes="whyus-section">
+          <WhyChooseUsSection />
+        </Section>
+        <div className="w-full bg-health-green">
+          <WaveSection src={wave4} />
+        </div>
+        <Section classes="testimonial-section">
+          <Testimonials />
+        </Section>
+        <div className="w-full bg-anti-flash-white">
+          <WaveSection src={wave3} />
+        </div>
+        <Section classes="mobileapp-section">
+          <MobileAppSection />
+        </Section>
+        <div className="w-full bg-health-green">
+          <WaveSection src={wave4} />
+        </div>
+        <Section classes="resources-section">
+          <ResourcesSection />
+        </Section>
+        <div className="w-full bg-anti-flash-white">
+          <WaveSection src={wave5} />
+        </div>
+        <Section classes="newsletter-section">
+          <Newsletter />
+          <img
+            className="h-96 absolute -left-44 -top-1/2"
+            src={blob4}
+            loading="lazy"
+            alt=""
+          />
+          <img
+            className="h-80 absolute -right-32 -top-1/2"
+            src={blob3}
+            loading="lazy"
+            alt=""
+          />
+        </Section>
+        <Footer />
+      </main>
+    </ReactLenis>
   );
 }
