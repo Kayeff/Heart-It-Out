@@ -19,7 +19,7 @@ export default function Newsletter() {
           <input
             type="email"
             placeholder="Your Email"
-            className="px-4 py-3 bg-transparent border border-white/30 outline-none w-[70%] rounded-full text-white placeholder:text-white/40"
+            className="px-4 py-3 bg-transparent border border-white/30 outline-hidden w-[70%] rounded-full text-white placeholder:text-white/40"
           />
           <Button
             title="Subscribe"
