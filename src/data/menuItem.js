@@ -12,27 +12,35 @@ import events from "../assets/events.svg";
 import blogs from "../assets/blogs.svg";
 
 export const menuItems = [
-  { label: "Therapy", },
-    {
-      label: "Services",
-      submenu: [
-        { title: "Individual Therapy",src: man},
-        { title: "Couples Therapy",src: couples},
-        { title: "Family Therapy",src: family},
-        { title: "Children Therapy",src: children},
-        { title: "Corporate Therapy",src: corporate},
-        { title: "Supervision",src: supervise},
-        { title: "Psychiatrist",src:  psychiatrist},
-        { title: "Career Counselling",src: counsel},
-        { title: "Diagnostics",src: checkup},
-      ],
-    },
-    { label: "Academy", },
-    { label: "Resources", submenu: [
-      {title: "Store", src: store},
-      {title: "Events", src: events},
-      {title: "Blog", src: blogs},
-    ] },
-    { label: "About", submenu: [] },
-    { label: "Contact", submenu: [] },
-  ];
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Therapy", href: "/therapy" },
+  {
+    label: "Services",
+    submenu: [
+      { title: "Individual Therapy", href: "/individual-therapy", src: man },
+      { title: "Couples Therapy", href: "/couple-therapy", src: couples },
+      { title: "Family Therapy", href: "/family-therapy", src: family },
+      { title: "Children Therapy", href: "/children-therapy", src: children },
+      {
+        title: "Corporate Therapy",
+        href: "/corporate-therapy",
+        src: corporate,
+      },
+      { title: "Supervision", href: "/supervision", src: supervise },
+      { title: "Psychiatrist", href: "/psychiatrist", src: psychiatrist },
+      { title: "Career Counselling", href: "/career-counsel", src: counsel },
+      { title: "Diagnostics", href: "/diagnostics", src: checkup },
+    ],
+  },
+  { label: "Academy", href: "/academy" },
+  {
+    label: "Resources",
+    submenu: [
+      { title: "Store", href: "/store", src: store },
+      { title: "Events", href: "/events", src: events },
+      { title: "Blog", href: "/blog", src: blogs },
+    ],
+  },
+  { label: "Contact", href: "/contact" },
+];

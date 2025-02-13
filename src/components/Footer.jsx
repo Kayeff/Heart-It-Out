@@ -10,140 +10,147 @@ import {
   RiWhatsappFill,
 } from "@remixicon/react";
 import logo from "../assets/logo.svg";
-
-function Contact({ Icon, children }) {
-  return (
-    <div className="flex items-start justify-start space-x-2 w-max hover:text-logo-yellow transition-colors">
-      <Icon />
-      {children}
-    </div>
-  );
-}
-
-function Icons({ Icon, href }) {
-  return (
-    <a
-      className="text-anti-flash-white/90 hover:text-white transition-colors"
-      href={href}
-    >
-      <Icon size={27} />
-    </a>
-  );
-}
-
-function Links({ title, children }) {
-  return (
-    <div className="flex items-center justify-start flex-col">
-      <div className="space-y-4">
-        <h1 className="uppercase font-medium tracking-wide text-sm text-anti-flash-white/80">
-          {title}
-        </h1>
-        <div className="space-y-2 flex items-start justify-start flex-col font-medium tracking-wide">
-          {children}
-        </div>
-      </div>
-    </div>
-  );
-}
+import ContactLinks from "./ContactLinks";
+import IconLinks from "./IconLinks";
+import FooterLinks from "./FooterLinks";
+import { NavLink } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-cerulean text-white flex items-center justify-center cursor-default pb-4">
+    <footer className="w-full bg-health-green text-white flex items-center justify-center cursor-default pb-4">
       <div className="w-[80%] py-4 space-y-4">
         <div className="w-full grid grid-cols-2 gap-4 py-4">
           <div className="py-4 space-y-4">
-            <div className="flex items-center justify-start space-x-4">
+            <NavLink to="/" className="flex items-center justify-start">
               <img className="h-14" src={logo} alt="" />
-            </div>
-            <Contact Icon={RiMapPinFill}>
-              <a href="#" className="flex items-start justify-center flex-col">
-                <h1 className="font-medium">#42, 7th 'B' Cross</h1>
-                <h1 className="font-medium">Koramangala 4th Block</h1>
-                <h1 className="font-medium">Bangalore - 560034</h1>
+            </NavLink>
+            <ContactLinks Icon={RiMapPinFill}>
+              <a
+                href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.622159543417!2d77.62163931346697!3d12.931988990881845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae145b75c68e79%3A0xd17e7decdc131767!2sHeart%20It%20Out%20-%20Psychologists%20in%20Bangalore%20%7C%20Mental%20Health%20Events%20%26%20Products!5e0!3m2!1sen!2sbd!4v1629096610658!5m2!1sen!2sbd"
+                target="_blank"
+                className="flex items-start justify-center flex-col"
+              >
+                #42, 7th 'B' Cross
+                <br />
+                Koramangala 4th Block
+                <br />
+                Bangalore - 560034
               </a>
-            </Contact>
-            <Contact Icon={RiMailFill}>
-              <a href="#" className="flex items-start justify-center flex-col">
-                <h1 className="font-medium">hello@heartitout.in</h1>
+            </ContactLinks>
+            <ContactLinks Icon={RiMailFill}>
+              <a
+                href="mailto: hello@heartitout.in"
+                className="flex items-start justify-center flex-col font-medium"
+                target="_blank"
+              >
+                hello@heartitout.in
               </a>
-            </Contact>
-            <Contact Icon={RiPhoneFill}>
-              <a href="#" className="flex items-start justify-center flex-col">
-                <h1 className="font-medium">+91 789 255 1372</h1>
+            </ContactLinks>
+            <ContactLinks Icon={RiPhoneFill}>
+              <a
+                href="tel:+91 789 255 1372"
+                className="flex items-start justify-center flex-col font-medium"
+                target="_blank"
+              >
+                +91 789 255 1372
               </a>
-            </Contact>
+            </ContactLinks>
             <div className="flex items-start justify-start space-x-4 py-4 w-max">
-              <Icons Icon={RiWhatsappFill} href="#" />
-              <Icons Icon={RiInstagramFill} href="#" />
-              <Icons Icon={RiFacebookBoxFill} href="#" />
-              <Icons Icon={RiTwitterFill} href="#" />
-              <Icons Icon={RiLinkedinFill} href="#" />
+              <IconLinks Icon={RiWhatsappFill} href="#" />
+              <IconLinks Icon={RiInstagramFill} href="#" />
+              <IconLinks Icon={RiFacebookBoxFill} href="#" />
+              <IconLinks Icon={RiTwitterFill} href="#" />
+              <IconLinks Icon={RiLinkedinFill} href="#" />
             </div>
           </div>
           <div className="grid grid-cols-3 gap-4 p-4">
-            <Links title="our services">
-              <a href="#" className="text-sm hover:text-logo-yellow">
+            <FooterLinks title="our services">
+              <NavLink
+                to="/individual-therapy"
+                className="text-sm hover:text-logo-yellow"
+              >
                 Individual Therapy
-              </a>
-              <a href="#" className="text-sm hover:text-logo-yellow">
+              </NavLink>
+              <NavLink
+                to="/couple-therapy"
+                className="text-sm hover:text-logo-yellow"
+              >
                 Couples Therapy
-              </a>
-              <a href="#" className="text-sm hover:text-logo-yellow">
+              </NavLink>
+              <NavLink
+                href="/family-therapy"
+                className="text-sm hover:text-logo-yellow"
+              >
                 Family Therapy
-              </a>
-              <a href="#" className="text-sm hover:text-logo-yellow">
+              </NavLink>
+              <NavLink
+                to="/children-therapy"
+                className="text-sm hover:text-logo-yellow"
+              >
                 Child Therapy
-              </a>
-              <a href="#" className="text-sm hover:text-logo-yellow">
+              </NavLink>
+              <NavLink
+                to="/corporate-therapy"
+                className="text-sm hover:text-logo-yellow"
+              >
                 Corporate Therapy
-              </a>
-              <a href="#" className="text-sm hover:text-logo-yellow">
+              </NavLink>
+              <NavLink
+                to="/supervision"
+                className="text-sm hover:text-logo-yellow"
+              >
                 Psychiatry Supervision
-              </a>
-              <a href="#" className="text-sm hover:text-logo-yellow">
+              </NavLink>
+              <NavLink
+                to="/career-counsel"
+                className="text-sm hover:text-logo-yellow"
+              >
                 Career Counselling
-              </a>
-            </Links>
-            <Links title="explore">
-              <a className="text-sm hover:text-logo-yellow" href="">
+              </NavLink>
+            </FooterLinks>
+            <FooterLinks title="explore">
+              <NavLink className="text-sm hover:text-logo-yellow" to="/about">
                 About Us
-              </a>
-              <a className="text-sm hover:text-logo-yellow" href="">
+              </NavLink>
+              <NavLink className="text-sm hover:text-logo-yellow" to="/therapy">
                 Therapists
-              </a>
-              <a className="text-sm hover:text-logo-yellow" href="">
+              </NavLink>
+              <NavLink className="text-sm hover:text-logo-yellow" to="/academy">
                 Academy
-              </a>
-              <a className="text-sm hover:text-logo-yellow" href="">
+              </NavLink>
+              <NavLink
+                className="text-sm hover:text-logo-yellow"
+                to="/corporate"
+              >
                 Corporate
-              </a>
-              <a className="text-sm hover:text-logo-yellow" href="">
+              </NavLink>
+              <NavLink className="text-sm hover:text-logo-yellow" to="/events">
                 Events
-              </a>
-              <a className="text-sm hover:text-logo-yellow" href="">
+              </NavLink>
+              <NavLink className="text-sm hover:text-logo-yellow" to="/store">
                 Products
-              </a>
-              <a className="text-sm hover:text-logo-yellow" href="">
+              </NavLink>
+              <NavLink className="text-sm hover:text-logo-yellow" to="/">
                 Careers
-              </a>
-            </Links>
-            <Links title="quick links">
-              <a className="text-sm hover:text-logo-yellow" href="">
+              </NavLink>
+            </FooterLinks>
+            <FooterLinks title="quick links">
+              <NavLink className="text-sm hover:text-logo-yellow" to="/contact">
                 Contact Us
-              </a>
-              <a className="text-sm hover:text-logo-yellow" href="">
+              </NavLink>
+              <NavLink className="text-sm hover:text-logo-yellow" to="/blog">
                 Blogs
-              </a>
-              <a className="text-sm hover:text-logo-yellow" href="">
+              </NavLink>
+              <NavLink className="text-sm hover:text-logo-yellow" to="/">
                 Privacy Policy
-              </a>
-              <a className="text-sm hover:text-logo-yellow" href="">
+              </NavLink>
+              <NavLink className="text-sm hover:text-logo-yellow" to="/">
                 Terms
-              </a>
-              <a className="text-sm hover:text-logo-yellow" href="">
+              </NavLink>
+              <NavLink className="text-sm hover:text-logo-yellow" to="/">
                 Refund Policy
-              </a>
-            </Links>
+              </NavLink>
+            </FooterLinks>
           </div>
         </div>
         <div className="w-full">
@@ -162,12 +169,12 @@ export default function Footer() {
             ©2025 Heart It Out Pvt. Ltd. All rights reserved.
           </h1>
           <div className="flex items-center justify-center space-x-4">
-            <a href="#" className="font-medium hover:text-logo-yellow">
+            <NavLink to="#" className="font-medium hover:text-logo-yellow">
               Privacy Policy
-            </a>
-            <a href="#" className="font-medium hover:text-logo-yellow">
+            </NavLink>
+            <NavLink to="#" className="font-medium hover:text-logo-yellow">
               Cookies
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>

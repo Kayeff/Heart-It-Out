@@ -1,7 +1,6 @@
 //Waves
 import wave3 from "../assets/wave-3.svg";
 import wave4 from "../assets/wave-4.svg";
-import wave5 from "../assets/wave-5.svg";
 import wave6 from "../assets/wave6.svg";
 import blob3 from "../assets/blob-3.svg";
 import blob4 from "../assets/blob-4.svg";
@@ -68,7 +67,7 @@ export default function Home() {
         <ResourcesSection />
       </Section>
       <div className="w-full bg-anti-flash-white">
-        <WaveSection src={wave5} />
+        <WaveSection src={wave3} />
       </div>
       <Section classes="newsletter-section">
         <Newsletter />

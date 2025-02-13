@@ -2,11 +2,13 @@ import { useEffect, useRef, useState } from "react";
 import MenuBar from "./MenuBar";
 import { RiArrowDropDownFill } from "@remixicon/react";
 import { twMerge } from "tailwind-merge";
+import { NavLink, useLocation } from "react-router-dom";
 
-export default function NavLinks({ title, submenu = [] }) {
+export default function NavLinks({ title, href, submenu = [] }) {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
-  const handleClick = () => setIsMenuVisible((prev) => !prev);
   const navRef = useRef(null);
+  const location = useLocation();
+  const isActive = location.pathname === href;
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -24,13 +26,20 @@ export default function NavLinks({ title, submenu = [] }) {
     };
   }, [isMenuVisible]);
 
+  const handleClick = (event) => {
+    if (submenu.length > 0) {
+      event.preventDefault();
+      setIsMenuVisible((prev) => !prev);
+    }
+  };
+
   return (
     <div className="relative w-max" ref={navRef}>
-      <a
-        href="#"
+      <NavLink
+        to={submenu.length > 0 ? "#" : href}
         className={`${twMerge(
           "transition-all duration-300 flex items-center justify-center px-3 py-2 hover:bg-prussian-blue/20 rounded-full",
-          isMenuVisible ? "text-prussian-blue bg-prussian-blue/20" : ""
+          isActive ? "text-logo-yellow bg-prussian-blue/20" : ""
         )}`}
         onClick={handleClick}
       >
@@ -40,9 +49,9 @@ export default function NavLinks({ title, submenu = [] }) {
             <RiArrowDropDownFill />
           </span>
         )}
-      </a>
+      </NavLink>
       {submenu.length > 0 &&
-        (isMenuVisible ? <MenuBar title={title} submenu={submenu} /> : null)}
+        (isMenuVisible ? <MenuBar submenu={submenu} /> : null)}
     </div>
   );
 }

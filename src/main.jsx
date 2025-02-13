@@ -17,7 +17,7 @@ import ChildrenTherapy from "./pages/ChildrenTherapy.jsx";
 import CorporateTherapy from "./pages/CorporateTherapy.jsx";
 import CareerCounsel from "./pages/CareerCounsel.jsx";
 import Supervision from "./pages/Supervision.jsx";
-import Pyschiatrist from "./pages/Pyschiatrist.jsx";
+import Psychiatrist from "./pages/Psychiatrist.jsx";
 import Diagnostics from "./pages/Diagnostics.jsx";
 import Academy from "./pages/Academy.jsx";
 import Store from "./pages/Store.jsx";
@@ -42,7 +42,7 @@ const router = createBrowserRouter([
       { path: "corporate-therapy", element: <CorporateTherapy /> },
       { path: "career-counsel", element: <CareerCounsel /> },
       { path: "supervision", element: <Supervision /> },
-      { path: "pyschiatrist", element: <Pyschiatrist /> },
+      { path: "psychiatrist", element: <Psychiatrist /> },
       { path: "diagnostics", element: <Diagnostics /> },
     ],
   },

@@ -1,10 +1,11 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { NavLink } from "react-router-dom";
 
 gsap.registerPlugin(useGSAP);
 
-export default function MenuBar({ submenu, title }) {
+export default function MenuBar({ submenu }) {
   const menuRef = useRef(null);
 
   useGSAP(
@@ -33,8 +34,8 @@ export default function MenuBar({ submenu, title }) {
     >
       <div className="w-full p-2">
         {submenu.map((menu, index) => (
-          <a
-            href="#"
+          <NavLink
+            to={menu.href}
             className="w-full hover:bg-health-green/10 flex items-center justify-start rounded-md transition-all space-x-4 group p-2 cursor-pointer duration-500"
             key={index}
           >
@@ -43,13 +44,10 @@ export default function MenuBar({ submenu, title }) {
               className="h-8 group-hover:scale-110 transition-all duration-500"
               alt=""
             />
-            <h1
-              href={menu.href || "#"}
-              className="text-dark-grey transition-colors font-medium group-hover:text-health-green"
-            >
+            <h1 className="text-dark-grey transition-colors font-medium group-hover:text-health-green">
               {menu.title}
             </h1>
-          </a>
+          </NavLink>
         ))}
       </div>
     </menu>

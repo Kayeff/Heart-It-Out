@@ -40,6 +40,15 @@
   }
 }
 
+.form-gradient {
+  background: rgb(0, 55, 80);
+  background: linear-gradient(
+    350deg,
+    rgba(0, 55, 80, 0.34421691039697133) 0%,
+    rgba(50, 149, 157, 0.4898751737022934) 100%
+  );
+}
+
 .hero-section {
   @apply flex items-center justify-center flex-col px-16 bg-anti-flash-white relative;
 }
@@ -69,7 +78,7 @@
 }
 
 .newsletter-section {
-  @apply flex items-center justify-center flex-col p-20 bg-cerulean space-y-10 relative;
+  @apply flex items-center justify-center flex-col p-20 bg-health-green space-y-10 relative;
 }
 
 .small-image {

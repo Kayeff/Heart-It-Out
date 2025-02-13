@@ -3,8 +3,8 @@ import hero from "../assets/hero.svg";
 
 export default function Hero() {
   return (
-    <div className="w-full flex items-center justify-center flex-col py-2">
-      <img className="w-96 h-96" src={hero} alt="" />
+    <div className="w-full flex items-center justify-center flex-col">
+      <img className="w-96 h-96" src={hero} alt="" loading="lazy" />
       <div className="w-[80%] flex items-center justify-center flex-col space-y-8 p-4">
         <div className=" flex items-center justify-center flex-col space-y-4">
           <h1 className="tracking-tight text-7xl font-bold text-center text-prussian-blue">

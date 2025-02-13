@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function Pyschiatrist() {
+export default function Psychiatrist() {
   return <div>Pyschiatrist</div>;
 }

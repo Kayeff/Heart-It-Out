@@ -2,7 +2,7 @@ import Button from "./Button";
 
 export default function Newsletter() {
   return (
-    <div className="w-full flex items-center justify-center ">
+    <div className="w-full flex items-center justify-center">
       <div className="w-[90%] flex items-center justify-center flex-col space-y-4">
         <div className="flex items-center justify-center flex-col space-y-1">
           <h1 className="text-6xl tracking-tight font-bold text-white">
@@ -19,7 +19,7 @@ export default function Newsletter() {
           <input
             type="email"
             placeholder="Your Email"
-            className="px-4 py-3 bg-transparent border border-white/30 outline-hidden w-[70%] rounded-full text-white placeholder:text-white/40"
+            className="px-4 py-3 bg-transparent border border-anti-flash-white/30 outline-hidden w-[70%] rounded-full text-white placeholder:text-white/40"
           />
           <Button
             title="Subscribe"
