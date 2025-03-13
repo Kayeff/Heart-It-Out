@@ -1,12 +1,12 @@
-export default function ImageShowcase({ src, css }) {
+import { twMerge } from "tailwind-merge";
+
+export default function ImageShowcase({ src, className }) {
   return (
-    <div className={`${css} rounded-3xl`}>
-      <img
-        className="w-full h-full object-cover rounded-xl object-center"
-        src={src}
-        alt="store_img"
-        loading="lazy"
-      />
-    </div>
+    <img
+      className={twMerge("w-96 h-96 object-cover", className)}
+      src={src}
+      alt="store_img"
+      loading="lazy"
+    />
   );
 }

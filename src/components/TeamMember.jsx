@@ -1,6 +1,6 @@
 export default function TeamMember({ member }) {
   return (
-    <div className="rounded-3xl flex flex-col items-center justify-center">
+    <div className="rounded-3xl flex flex-col items-center justify-center border border-prussian-blue/20">
       <div className="w-full overflow-hidden rounded-t-2xl">
         <img
           className="rounded-t-2xl w-full object-cover scale-105"

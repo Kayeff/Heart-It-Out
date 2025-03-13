@@ -5,21 +5,21 @@ import { app_adv } from "../data/app_advdata";
 
 export default function MobileAppSection() {
   return (
-    <div className="w-[90%] grid grid-cols-2 gap-4">
-      <div className="h-full p-4 flex items-center justify-center">
+    <div className="w-[70%] grid grid-cols-2 gap-4">
+      <div className="p-4 flex items-center justify-start">
         <img
-          className="h-[70%]"
+          className="w-full object-cover"
           src={mobile}
           alt="heartitout-mobile"
           loading="lazy"
         />
       </div>
-      <div className="h-screen p-4 flex items-center justify-center flex-col">
+      <div className="p-4 flex items-center justify-center flex-col">
         <div className="w-full flex items-start justify-center flex-col space-y-8">
-          <h1 className="font-semibold tracking-tight text-6xl text-whitesmoke">
+          <h1 className="font-semibold tracking-tight text-5xl text-whitesmoke">
             <span className="text-logo-yellow"> Heart It Out</span> - mobile app
           </h1>
-          <div className="w-full space-y-4 flex items-start justify-center flex-col px-3">
+          <div className="w-full space-y-4 flex items-start justify-center flex-col">
             {app_adv.map((item) => (
               <Advantage key={item.id} title={item.title} />
             ))}
@@ -27,7 +27,7 @@ export default function MobileAppSection() {
           <div className="w-full flex items-center justify-center">
             <Button
               title="Log in now"
-              css="px-10 hover:bg-anti-flash-white hover:text-health-green font-semibold"
+              css="px-10 hover:bg-logo-yellow font-semibold"
             />
           </div>
         </div>

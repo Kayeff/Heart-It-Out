@@ -6,7 +6,7 @@ import blob2 from "../assets/blob-2.svg";
 
 export default function WhyChooseUs() {
   return (
-    <div className="w-[80%] flex items-center justify-center flex-col space-y-20 relative py-10">
+    <div className="w-[70%] flex items-center justify-center flex-col space-y-20 relative py-10">
       <h1 className="text-6xl tracking-tight font-bold">
         Why choose <span className="text-logo-yellow">Heart It Out?</span>
       </h1>
@@ -20,13 +20,13 @@ export default function WhyChooseUs() {
         css="hover:text-health-green hover:bg-anti-flash-white font-semibold"
       ></Button>
       <img
-        className="h-96 absolute top-0 -left-20"
+        className="h-96 absolute top-20 -left-20"
         src={blob1}
         loading="lazy"
         alt=""
       />
       <img
-        className="h-96 absolute bottom-10 -right-20"
+        className="h-96 absolute bottom-40 -right-20"
         src={blob2}
         loading="lazy"
         alt=""

@@ -8,7 +8,7 @@ export const card_data = [
   {
     id: "card2",
     title: "Scientifically Proven",
-    para: "Get scientifically backed, culture-specific, age aligned mental health care. We offer the widest range of mental health services provided by India’s best mental health professionals.",
+    para: "Get scientifically backed, culture-specific, age aligned mental health care.",
     span: false,
   },
   {
@@ -32,7 +32,7 @@ export const card_data = [
   {
     id: "card6",
     title: "Mobile app",
-    para: "Track your wellbeing progress effortlessly with our tools, designed to help you monitor improvements and stay motivated.From health plans to therapy sessions, access everything you need in one place.",
+    para: "Track your wellbeing progress effortlessly with our tools, designed to help you monitor improvements and stay motivated.",
     span: false,
   },
 ];

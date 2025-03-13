@@ -3,7 +3,6 @@ import WaveSection from "../components/WaveSection";
 import ContactLinks from "../components/ContactLinks";
 import { RiMapPinFill, RiMailFill, RiPhoneFill } from "@remixicon/react";
 import arrow from "../assets/blue-arrow.svg";
-import blob2 from "../assets/blob-2.svg";
 import Form from "../components/Form";
 import Heading from "../components/Heading";
 

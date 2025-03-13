@@ -39,7 +39,7 @@ export default function FacilitiesGrid() {
       <h1 className="tracking-tight text-5xl font-semibold text-white">
         Facilities <span className="text-logo-yellow">we provide</span>
       </h1>
-      <div className="grid grid-cols-4 grid-flow-dense gap-2 w-[80%] relative z-10">
+      <div className="grid grid-cols-4 grid-flow-dense gap-2 w-[70%] relative z-10">
         {facilitiesData.map((data, index) => (
           <Facilities key={index} Icon={data.Icon} title={data.title} />
         ))}

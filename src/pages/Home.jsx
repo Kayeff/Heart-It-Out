@@ -36,7 +36,7 @@ export default function Home() {
         <WaveSection src={wave4} />
       </div>
       <Section classes="therapy-section">
-        <div className="w-[90%] px-10 space-y-20">
+        <div className="w-[70%] space-y-20">
           {therapy_data.map((therapy) => (
             <TherapyShowcase key={therapy.id} {...therapy} />
           ))}

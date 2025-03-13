@@ -163,7 +163,7 @@ export default function About() {
               Our <SpanText text="Team" />
             </h1>
           </div>
-          <div className="w-full grid grid-cols-5 gap-2">
+          <div className="w-full grid grid-cols-5 gap-4">
             {team_data.map((team) => (
               <TeamMember key={team.id} member={team} />
             ))}
@@ -172,12 +172,12 @@ export default function About() {
         <div className="w-[70%] flex items-center justify-center flex-col space-y-8">
           <div className="w-full grid grid-cols-2 gap-4">
             <img
-              className="rounded-3xl w-full object-cover"
+              className="rounded-3xl w-full object-cover shadow-cards"
               src={team}
               alt=""
               loading="lazy"
             />
-            <div className="w-full flex flex-col items-start justify-between space-y-4 bg-whitesmoke p-6 rounded-3xl">
+            <div className="w-full flex flex-col items-start justify-between space-y-4 bg-whitesmoke p-6 rounded-3xl shadow-cards">
               <div className="space-y-4">
                 <h1 className="tracking-tight text-5xl font-bold text-prussian-blue">
                   Culture &{" "}
@@ -203,12 +203,6 @@ export default function About() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="w-full bg-health-green">
-        <WaveSection src={wave4} />
-      </div>
-      <div className="w-full bg-anti-flash-white">
-        <WaveSection src={wave3} />
       </div>
     </main>
   );

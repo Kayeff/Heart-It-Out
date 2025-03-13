@@ -1,4 +1,3 @@
-import { RiAccountCircleFill } from "@remixicon/react";
 import logo from "../assets/logo.svg";
 import NavbarLink from "./NavbarLink";
 import { menuItems } from "../data/menuItem";
@@ -31,12 +30,12 @@ export default function Navbar() {
             </div>
           ))}
         </div>
-        <button className="flex items-center justify-center rounded-full hover:bg-prussian-blue/20 p-2 duration-300 transition-colors cursor-pointer">
-          <RiAccountCircleFill
-            className="text-anti-flash-white transition-colors duration-300"
-            size={40}
-          />
-        </button>
+        <NavLink
+          to="/login"
+          className="cursor-pointer px-8 py-3 text-sm bg-logo-yellow rounded-full text-black font-medium"
+        >
+          Log in
+        </NavLink>
       </div>
     </nav>
   );

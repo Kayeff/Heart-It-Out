@@ -9,7 +9,7 @@ export default function TherapyShowcase({
   buttonText,
 }) {
   return (
-    <div className="grid grid-cols-2 gap-20 w-full p-10">
+    <div className="grid grid-cols-2 gap-20 w-full">
       {twist ? (
         <>
           <div className="w-full flex items-center justify-start">

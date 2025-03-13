@@ -1,4 +1,4 @@
-import { ReactLenis, useLenis } from "lenis/react";
+import { ReactLenis } from "lenis/react";
 import { Suspense, useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -6,7 +6,6 @@ import Footer from "./components/Footer";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function App() {
-  const lenis = useLenis(null);
   const location = useLocation();
 
   useEffect(() => {

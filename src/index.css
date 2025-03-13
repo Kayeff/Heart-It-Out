@@ -10,7 +10,6 @@
 
   --color-health-green: #32959d;
   --color-logo-yellow: #f9e74d;
-  --color-light-yellow: #fff9c8;
   --color-dark-grey: #455a64;
   --color-dark-skin: #fbeee7;
   --color-anti-flash-white: #edf2f4;
@@ -22,14 +21,6 @@
   --font-Switzer: Switzer, sans-serif;
 }
 
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
 @layer base {
   *,
   ::after,
@@ -38,15 +29,6 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
-}
-
-.form-gradient {
-  background: rgb(0, 55, 80);
-  background: linear-gradient(
-    350deg,
-    rgba(0, 55, 80, 0.34421691039697133) 0%,
-    rgba(50, 149, 157, 0.4898751737022934) 100%
-  );
 }
 
 .hero-section {
@@ -66,11 +48,11 @@
 }
 
 .testimonial-section {
-  @apply px-10 py-8 min-h-screen flex items-start justify-between bg-anti-flash-white;
+  @apply py-8 min-h-screen flex items-start justify-between bg-anti-flash-white;
 }
 
 .mobileapp-section {
-  @apply py-8 min-h-screen flex items-start justify-center bg-health-green;
+  @apply py-8 min-h-screen flex items-center justify-center bg-health-green;
 }
 
 .resources-section {
@@ -82,7 +64,7 @@
 }
 
 .small-image {
-  @apply h-40 w-40;
+  @apply h-40 w-40 object-cover;
 }
 
 .img {
