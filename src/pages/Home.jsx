@@ -1,3 +1,5 @@
+import { lazy } from "react";
+
 //Waves
 import wave3 from "../assets/wave-3.svg";
 import wave4 from "../assets/wave-4.svg";
