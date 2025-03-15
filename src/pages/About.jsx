@@ -81,13 +81,11 @@ export default function About() {
               className="w-full h-96 object-bottom object-cover rounded-3xl shadow-cards"
               src={building}
               alt=""
-              loading="lazy"
             />
             <img
               className="w-full h-96 object-cover rounded-3xl shadow-cards"
               src={building2}
               alt="building"
-              loading="lazy"
             />
           </div>
         </div>

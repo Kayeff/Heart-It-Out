@@ -1,10 +1,14 @@
-export default function WaveSection({ children, src }) {
+import { memo } from "react";
+
+const WaveSection = memo(function WaveSection({ src }) {
   return (
-    <div className="w-full">
-      <img className="w-full" src={src} alt="waves" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] space-y-10 cursor-default">
-        {children}
-      </div>
-    </div>
+    <img
+      className="w-full will-change-transform"
+      src={src}
+      alt="waves"
+      loading="lazy"
+    />
   );
-}
+});
+
+export default WaveSection;

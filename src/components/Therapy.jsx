@@ -1,6 +1,6 @@
 import Button from "./Button";
 
-export default function TherapyShowcase({
+export default function Therapy({
   twist,
   src,
   focusedText,

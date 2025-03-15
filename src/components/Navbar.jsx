@@ -24,18 +24,11 @@ export default function Navbar() {
               <NavbarLink
                 href={menu.href}
                 title={menu.label}
-                submenu={menu.submenu}
                 icon={menu.icon}
               />
             </div>
           ))}
         </div>
-        <NavLink
-          to="/login"
-          className="cursor-pointer px-8 py-3 text-sm bg-logo-yellow rounded-full text-black font-medium"
-        >
-          Log in
-        </NavLink>
       </div>
     </nav>
   );

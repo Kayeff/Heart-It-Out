@@ -1,5 +1,3 @@
-import { lazy } from "react";
-
 //Waves
 import wave3 from "../assets/wave-3.svg";
 import wave4 from "../assets/wave-4.svg";
@@ -7,14 +5,11 @@ import wave6 from "../assets/wave6.svg";
 import blob3 from "../assets/blob-3.svg";
 import blob4 from "../assets/blob-4.svg";
 
-//Data
-import { therapy_data } from "../data/therapy";
-
 //Components
 import Hero from "../components/Hero";
 import Section from "../components/Section";
 import WaveSection from "../components/WaveSection";
-import TherapyShowcase from "../components/TherapyShowcase";
+import TherapySection from "../components/TherapySection";
 import WhyChooseUsSection from "../components/WhyChooseUsSection";
 import Testimonials from "../components/Testimonials";
 import FacilitiesGrid from "../components/FacilitiesGrid";
@@ -38,11 +33,7 @@ export default function Home() {
         <WaveSection src={wave4} />
       </div>
       <Section classes="therapy-section">
-        <div className="w-[70%] space-y-20">
-          {therapy_data.map((therapy) => (
-            <TherapyShowcase key={therapy.id} {...therapy} />
-          ))}
-        </div>
+        <TherapySection />
       </Section>
       <div className="w-full bg-anti-flash-white">
         <WaveSection src={wave3} />
