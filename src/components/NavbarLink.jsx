@@ -8,7 +8,7 @@ export default function NavBarLink({ title, href }) {
         to={href}
         className={({ isActive }) =>
           twMerge(
-            "transition-all duration-300 flex items-center justify-center px-3 py-2 hover:bg-prussian-blue/20 rounded-full",
+            "transition-all duration-300 flex items-center justify-center",
             isActive && "text-logo-yellow"
           )
         }

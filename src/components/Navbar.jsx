@@ -15,7 +15,7 @@ export default function Navbar() {
             loading="lazy"
           />
         </NavLink>
-        <div className="flex items-center justify-center font-medium space-x-1">
+        <div className="flex items-center justify-center font-medium gap-5 pr-4">
           {menuItems.map((menu, index) => (
             <div
               key={index}
