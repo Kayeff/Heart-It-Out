@@ -1,6 +1,4 @@
-import { memo } from "react";
-
-const WaveSection = memo(function WaveSection({ src }) {
+export function WaveSection({ src }) {
   return (
     <img
       className="w-full will-change-transform"
@@ -9,6 +7,4 @@ const WaveSection = memo(function WaveSection({ src }) {
       loading="lazy"
     />
   );
-});
-
-export default WaveSection;
+}

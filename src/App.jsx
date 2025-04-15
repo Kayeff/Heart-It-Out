@@ -7,7 +7,7 @@ import AnimatedRoutes from "./components/AnimatedRoutes";
 export default function App() {
   return (
     <ReactLenis root options={{ autoRaf: true }}>
-      <main className="w-full min-h-screen font-Switzer relative bg-anti-flash-white antialiased">
+      <main className="w-full min-h-[100lvh] font-Switzer relative bg-anti-flash-white antialiased">
         <ScrollToTop />
         <Navbar />
         <AnimatedRoutes />

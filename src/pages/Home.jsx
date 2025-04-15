@@ -1,3 +1,4 @@
+import { Suspense, lazy } from "react";
 //Waves
 import wave3 from "../assets/wave-3.svg";
 import wave4 from "../assets/wave-4.svg";
@@ -5,10 +6,11 @@ import wave6 from "../assets/wave6.svg";
 import blob3 from "../assets/blob-3.svg";
 import blob4 from "../assets/blob-4.svg";
 
+const WaveSection = lazy(() => import("../components/WaveSection"));
+
 //Components
 import Hero from "../components/Hero";
 import Section from "../components/Section";
-import WaveSection from "../components/WaveSection";
 import TherapySection from "../components/TherapySection";
 import WhyChooseUsSection from "../components/WhyChooseUsSection";
 import Testimonials from "../components/Testimonials";
